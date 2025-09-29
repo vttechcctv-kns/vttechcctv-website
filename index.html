@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VTTECH - CCTV • Máy khoan pin • Máy tính • Linh kiện • Thiết bị mạng</title>
+  <meta name="description" content="VTTECH - Công ty TNHH Công nghệ Điện tử. Cung cấp camera CCTV, máy khoan pin, máy tính, linh kiện và thiết bị mạng. Bảo hành, tư vấn kỹ thuật, lắp đặt." />
+  <link rel="icon" href="f:\Vu\DỰ ÁN VTTCEH\hình\LOGO2.png" />
+  <style>
+    /* Simple responsive CSS — copy to your project or host as a single HTML file */
+    :root{--accent:#0b74de;--muted:#6b7280;--card:#ffffff;--bg:#f7fafc}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0;background:var(--bg);color:#0f172a}
+    header{background:#fff;border-bottom:1px solid #e6edf3}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .logo{display:flex;align-items:center;gap:24px;font-weight:700}
+    .logo img{height:60px}
+    .menu{display:flex;gap:24px;align-items:right}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
+    .search{flex:1;margin:0 20px}
+    .hero{display:flex;gap:20px;align-items:center;padding:36px 0}
+    .hero .left{flex:1}
+    .hero h1{font-size:28px;margin:0 0 10px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);border:1px solid #eef5fb}
+    .category-list{display:flex;gap:10px;flex-wrap:wrap}
+    .category{background:#fff;padding:10px 12px;border-radius:10px;border:1px solid #e6eef8;text-align:center;min-width:120px}
+    .product-card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+    .product-title{font-weight:600;margin:8px 0}
+    .price{color:#0b5edf;font-weight:700}
+    footer{background:#0b1220;color:#fff;padding:30px 0;margin-top:30px}
+    .contact{display:flex;gap:16px;flex-wrap:wrap}
+    @media (max-width:720px){.hero{flex-direction:column}.search{order:3;margin:10px 0}}
+  </style>
+  <script>
+    // Minimal JS for demo behavior
+    function addToCart(name){alert(name + ' đã được thêm vào giỏ (demo).');}
+    function filterCategory(cat){
+      document.querySelectorAll('.product-card').forEach(p=>{
+        if(cat==='All' || p.dataset-cat===cat) p.style.display='block'; else p.style.display='none';
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+         
+       <img src="f:\Vu\DỰ ÁN VTTCEH\hình\LOGO2.png" alt="Logo VTTECH" />
+      
+<div>
+        <div>
+          <div style="font-size:24px;color:var(--muted)">VT-TECH</div>
+            <div style="font-size:24px;color:var(--muted)">Công nghệ & Thiết bị</div>
+        </div>
+      </div>
+
+      <div class="search">
+        <input type="search" placeholder="Tìm sản phẩm, model, mã..." style="width:100%;padding:18px;border-radius:8px;border:1px solid #e6edf3" />
+      </div>
+
+      <nav class="menu">
+        <a href="#categories" style="color:var(--muted);text-decoration:none">Danh mục</a>
+        <a href="#products" style="color:var(--muted);text-decoration:none">Sản phẩm</a>
+        <a href="#contact" class="btn">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="left">
+        <h1>VTTECH — Camera CCTV, Máy khoan pin, Máy tính & Thiết bị mạng</h1>
+        <p style="color:var(--muted);margin:8px 0 16px">Chúng tôi cung cấp thiết bị chất lượng, bảo hành chính hãng, lắp đặt và tư vấn kỹ thuật chuyên nghiệp.</p>
+        <div style="display:flex;gap:12px">
+          <a href="#products" class="btn">Xem sản phẩm nổi bật</a>
+          <a href="#contact" style="padding:10px 14px;border-radius:8px;border:1px solid #dbeffd;text-decoration:none;color:var(--accent)">Yêu cầu báo giá</a>
+        </div>
+      </div>
+      <div style="flex:0 0 360px">
+        <div class="card">
+          <h3 style="margin-top:0">Ưu đãi hôm nay</h3>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;justify-content:space-between"><span>CCTV Full HD 4MP</span><strong style="color:#059669">-10%</strong></div>
+            <div style="display:flex;justify-content:space-between"><span>Máy khoan pin 18V</span><strong style="color:#059669">Free pin extra</strong></div>
+            <div style="display:flex;justify-content:space-between"><span>Router SOHO</span><strong style="color:#059669">Giao hàng miễn phí</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" style="margin-top:20px">
+      <h2>Danh mục sản phẩm</h2>
+      </div>
+      <nav class="menu">
+         <a href="trangchu.html" style="color:var(--muted);text-decoration:none">Trang chủ</a>
+         <a href="all.html" style="color:var(--muted);text-decoration:none">Tất cả</a>
+         <a href="cctv.html" style="color:var(--muted);text-decoration:none">Camera & CCTV</a>
+         <a href="drill.html" style="color:var(--muted);text-decoration:none">Máy khoan Pin</a>
+         <a href="pc.html" style="color:var(--muted);text-decoration:none">Máy tính & Laptop</a>
+         <a href="parts.html" style="color:var(--muted);text-decoration:none">Linh kiện</a>
+         <a href="network.html" style="color:var(--muted);text-decoration:none">Thiết bị mạng</a>
+      </nav>
+      </div>
+    </section>
+
+    <section id="products" style="margin-top:20px">
+      <h2>Sản phẩm nổi bật</h2>
+      <div class="grid" style="margin-top:12px">
+
+        <!-- Product 1 -->
+        <div class="card product-card" data-cat="CCTV">
+          <img src="f:\Vu\DỰ ÁN VTTCEH\hình\DS-2CD1T27GO-LUF.png" alt="Camera CCTV" />
+          <div class="product-title">Camera IP 4MP PoE — VT-4MP</div>
+          <div style="color:var(--muted);font-size:13px">Giám sát toàn diện, có hồng ngoại, ghi hình 24/7</div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px">
+            <div>
+              <div class="price">2.150.000₫</div>
+              <div style="font-size:12px;color:var(--muted)">Bảo hành 24 tháng</div>
+            </div>
+            <div>
+              <button class="btn" onclick="addToCart('Camera IP 4MP PoE — VT-4MP')">Mua</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="card product-card" data-cat="Drill">
+          <img src="f:\Vu\DỰ ÁN VTTCEH\hình\WF-ID1610BL.png" alt="Máy khoan pin" />
+          <div class="product-title">Máy khoan pin 18V — ID1610BL</div>
+          <div style="color:var(--muted);font-size:13px">Công suất cao, kèm 2 pin, tốc độ variable</div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px">
+            <div>
+              <div class="price">1.490.000₫</div>
+              <div style="font-size:12px;color:var(--muted)">Bảo hành 12 tháng</div>
+            </div>
+            <div>
+              <button class="btn" onclick="addToCart('Máy khoan pin 18V — D18Pro')">Mua</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="card product-card" data-cat="PC">
+          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Máy tính" />
+          <div class="product-title">Laptop Workstation 15" — VT-L15</div>
+          <div style="color:var(--muted);font-size:13px">i7 / 16GB / 512GB SSD — phù hợp đồ họa & văn phòng</div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px">
+            <div>
+              <div class="price">18.900.000₫</div>
+              <div style="font-size:12px;color:var(--muted)">Bảo hành 12 tháng</div>
+            </div>
+            <div>
+              <button class="btn" onclick="addToCart('Laptop Workstation 15" + " — VT-L15')">Mua</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="card product-card" data-cat="Parts">
+          <img src="f:\Vu\DỰ ÁN VTTCEH\hình\SSD-1TB.png" alt="Linh kiện" />
+          <div class="product-title">SSD 1TB — WD</div>
+          <div style="color:var(--muted);font-size:13px">Tốc độ đọc/ghi cao, phù hợp game & làm việc</div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px">
+            <div>
+              <div class="price">4.999.000₫</div>
+              <div style="font-size:12px;color:var(--muted)">Bảo hành 36 tháng</div>
+            </div>
+            <div>
+              <button class="btn" onclick="addToCart('SSD 1TB — WD')">Mua</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="card product-card" data-cat="Network">
+          <img src="f:\Vu\DỰ ÁN VTTCEH\hình\DRAYTEK-2927.png" alt="Thiết bị mạng" />
+          <div class="product-title">Thiết bị cân bằng tải Draytek-2927</div>
+          <div style="color:var(--muted);font-size:13px">VPN, QoS, 4x LAN, quản lý dễ dàng</div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px">
+            <div>
+              <div class="price">4.250.000₫</div>
+              <div style="font-size:12px;color:var(--muted)">Bảo hành 24 tháng</div>
+            </div>
+            <div>
+              <button class="btn" onclick="addToCart('Router Gigabit SOHO — NetPro X1')">Mua</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="why" style="margin-top:24px">
+      <div class="grid">
+        <div class="card">
+          <h3>Giao hàng & Lắp đặt</h3>
+          <p style="color:var(--muted)">Dịch vụ giao & lắp đặt tại TP.HCM/ Các tỉnh lân cận. Hỗ trợ kỹ thuật onsite theo yêu cầu.</p>
+        </div>
+        <div class="card">
+          <h3>Bảo hành & Hậu mãi</h3>
+          <p style="color:var(--muted)">Chúng tôi cung cấp bảo hành chính hãng và hỗ trợ đổi trả trong thời hạn quy định.</p>
+        </div>
+        <div class="card">
+          <h3>Tư vấn chuyên sâu</h3>
+          <p style="color:var(--muted)">Tư vấn tối ưu hệ thống CCTV, mạng, và cấu hình máy tính theo nhu cầu thực tế.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:28px">
+      <h2>Liên hệ đặt hàng / tư vấn</h2>
+      <div class="grid" style="margin-top:12px">
+        <div class="card">
+          <h3>Thông tin công ty</h3>
+          <p style="margin:6px 0;color:var(--muted)">Công ty TNHH Công nghệ Điện tử VTTECH</p>
+          <p style="margin:6px 0">Điện thoại: <strong>0938 582 169</strong></p>
+          <p style="margin:6px 0">Email: <strong>vttechcctv@gmail.com</strong></p>
+          <p style="margin:6px 0;color:var(--muted)">Địa chỉ: 183/7 Đường ba tháng hai, Phường Vườn Lài, Thành phố Hồ Chí Minh</p>
+        </div>
+        <div class="card">
+          <h3>Gửi yêu cầu</h3>
+          <form onsubmit="event.preventDefault();alert('Cảm ơn — Chúng tôi sẽ liên hệ sớm (demo)')">
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <input placeholder="Họ tên" required style="padding:10px;border-radius:8px;border:1px solid #e6edf3" />
+              <input placeholder="Số điện thoại" required style="padding:10px;border-radius:8px;border:1px solid #e6edf3" />
+              <textarea placeholder="Nội dung yêu cầu" rows="4" style="padding:10px;border-radius:8px;border:1px solid #e6edf3"></textarea>
+              <button class="btn" type="submit">Gửi</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div>
+          <div style="font-weight:700">VTTECH</div>
+          <div style="color:#94a3b8;font-size:13px;margin-top:6px">© VTTECH — Thiết bị & Giải pháp công nghệ</div>
+        </div>
+        <div style="color:#94a3b8">Hotline: 0938 582 169. 0907 443 176 — Email: vttechcctv@gmail.com</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
