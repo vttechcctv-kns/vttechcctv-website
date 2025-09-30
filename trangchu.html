@@ -33,22 +33,32 @@
     .contact{display:flex;gap:16px;flex-wrap:wrap}
     @media (max-width:720px){.hero{flex-direction:column}.search{order:3;margin:10px 0}}
   </style>
- <script>
-  // Khởi tạo giỏ hàng từ localStorage
+<script>
   let cart = JSON.parse(localStorage.getItem('cart') || '[]');
 
-  function updateCartCount() {
-    document.getElementById('cart-link').textContent = `Giỏ hàng (${cart.length})`;
+  function renderCart() {
+    let html = '';
+    let total = 0;
+    cart.forEach((item, index) => {
+      total += item.price;
+      html += `<div class="item">
+        <div>${item.name}</div>
+        <div>${item.price.toLocaleString('vi-VN')}₫ 
+          <span class="remove" onclick="removeItem(${index})">Xóa</span>
+        </div>
+      </div>`;
+    });
+    document.getElementById('cart-items').innerHTML = html || 'Giỏ hàng trống.';
+    document.getElementById('total').textContent = cart.length ? `Tổng: ${total.toLocaleString('vi-VN')}₫` : '';
   }
 
-  function addToCart(name, price) {
-    cart.push({name, price});
+  function removeItem(index) {
+    cart.splice(index,1);
     localStorage.setItem('cart', JSON.stringify(cart));
-    updateCartCount();
-    alert('Đã thêm vào giỏ hàng!');
+    renderCart();
   }
 
-  updateCartCount();
+  renderCart();
 </script>
 </head>
 <body>
