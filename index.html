@@ -33,15 +33,23 @@
     .contact{display:flex;gap:16px;flex-wrap:wrap}
     @media (max-width:720px){.hero{flex-direction:column}.search{order:3;margin:10px 0}}
   </style>
-  <script>
-    // Minimal JS for demo behavior
-    function addToCart(name){alert(name + ' đã được thêm vào giỏ (demo).');}
-    function filterCategory(cat){
-      document.querySelectorAll('.product-card').forEach(p=>{
-        if(cat==='All' || p.dataset-cat===cat) p.style.display='block'; else p.style.display='none';
-      });
-    }
-  </script>
+ <script>
+  // Khởi tạo giỏ hàng từ localStorage
+  let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+
+  function updateCartCount() {
+    document.getElementById('cart-link').textContent = `Giỏ hàng (${cart.length})`;
+  }
+
+  function addToCart(name, price) {
+    cart.push({name, price});
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartCount();
+    alert('Đã thêm vào giỏ hàng!');
+  }
+
+  updateCartCount();
+</script>
 </head>
 <body>
   <header>
