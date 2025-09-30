@@ -15,44 +15,39 @@
 <body>
   <h1>Giỏ hàng</h1>
   <div id="cart-items"></div>
-  <div class="total" id="total"></div>
+<p id="total"></p>
 
 <script>
   function getCart() {
-    try {
-      return JSON.parse(localStorage.getItem('cart') || '[]');
-    } catch (e) {
-      return window.cartFallback || [];
-    }
+    return JSON.parse(localStorage.getItem("cart") || "[]");
   }
   function saveCart(cart) {
-    try {
-      localStorage.setItem('cart', JSON.stringify(cart));
-    } catch (e) {
-      window.cartFallback = cart;
-    }
+    localStorage.setItem("cart", JSON.stringify(cart));
   }
 
   let cart = getCart();
 
   function renderCart() {
-    let html = '';
+    let html = "";
     let total = 0;
     cart.forEach((item, index) => {
       total += item.price;
-      html += `<div class="item">
-        <div>${item.name}</div>
-        <div>${item.price.toLocaleString('vi-VN')}₫ 
-          <span class="remove" onclick="removeItem(${index})">Xóa</span>
+      html += `
+        <div class="item">
+          <span>${item.name}</span> - 
+          <span>${item.price.toLocaleString("vi-VN")}₫</span>
+          <button onclick="removeItem(${index})">Xóa</button>
         </div>
-      </div>`;
+      `;
     });
-    document.getElementById('cart-items').innerHTML = html || 'Giỏ hàng trống.';
-    document.getElementById('total').textContent = cart.length ? `Tổng: ${total.toLocaleString('vi-VN')}₫` : '';
+    document.getElementById("cart-items").innerHTML =
+      html || "Giỏ hàng trống.";
+    document.getElementById("total").textContent =
+      cart.length > 0 ? `Tổng: ${total.toLocaleString("vi-VN")}₫` : "";
   }
 
   function removeItem(index) {
-    cart.splice(index,1);
+    cart.splice(index, 1);
     saveCart(cart);
     renderCart();
   }
