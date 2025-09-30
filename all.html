@@ -465,42 +465,35 @@
       </div>
     </div>
   </footer>
-
- <script>
-  // Safe storage: dùng localStorage nếu có, fallback sang biến tạm
+<script>
+  // Hàm lấy giỏ hàng từ localStorage
   function getCart() {
-    try {
-      return JSON.parse(localStorage.getItem('cart') || '[]');
-    } catch (e) {
-      return window.cartFallback || [];
-    }
+    return JSON.parse(localStorage.getItem("cart") || "[]");
   }
+
+  // Hàm lưu giỏ hàng
   function saveCart(cart) {
-    try {
-      localStorage.setItem('cart', JSON.stringify(cart));
-    } catch (e) {
-      window.cartFallback = cart;
-    }
+    localStorage.setItem("cart", JSON.stringify(cart));
   }
 
-  let cart = getCart();
-
-  function updateCartCount() {
-    const cartLink = document.getElementById('cart-link');
-    if (cartLink) {
-      cartLink.textContent = `Giỏ hàng (${cart.length})`;
-    }
-  }
-
+  // Hàm thêm sản phẩm
   function addToCart(name, price) {
-    cart.push({name, price});
+    let cart = getCart();
+    cart.push({ name, price });
     saveCart(cart);
+    alert("Đã thêm vào giỏ hàng!");
     updateCartCount();
-    alert('Đã thêm vào giỏ hàng!');
   }
 
-  updateCartCount();
+  // Cập nhật số lượng giỏ hàng trên menu
+  function updateCartCount() {
+    let cart = getCart();
+    let cartLink = document.getElementById("cart-link");
+    if (cartLink) cartLink.textContent = `Giỏ hàng (${cart.length})`;
+  }
+
+  updateCartCount(); // chạy khi load trang
 </script>
-  
+
 </body>
 </html>
