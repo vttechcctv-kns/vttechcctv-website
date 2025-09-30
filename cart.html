@@ -18,7 +18,6 @@
   <div class="total" id="total"></div>
 
 <script>
-  // Safe storage: dùng localStorage nếu có, fallback sang biến tạm
   function getCart() {
     try {
       return JSON.parse(localStorage.getItem('cart') || '[]');
@@ -36,21 +35,29 @@
 
   let cart = getCart();
 
-  function updateCartCount() {
-    const cartLink = document.getElementById('cart-link');
-    if (cartLink) {
-      cartLink.textContent = `Giỏ hàng (${cart.length})`;
-    }
+  function renderCart() {
+    let html = '';
+    let total = 0;
+    cart.forEach((item, index) => {
+      total += item.price;
+      html += `<div class="item">
+        <div>${item.name}</div>
+        <div>${item.price.toLocaleString('vi-VN')}₫ 
+          <span class="remove" onclick="removeItem(${index})">Xóa</span>
+        </div>
+      </div>`;
+    });
+    document.getElementById('cart-items').innerHTML = html || 'Giỏ hàng trống.';
+    document.getElementById('total').textContent = cart.length ? `Tổng: ${total.toLocaleString('vi-VN')}₫` : '';
   }
 
-  function addToCart(name, price) {
-    cart.push({name, price});
+  function removeItem(index) {
+    cart.splice(index,1);
     saveCart(cart);
-    updateCartCount();
-    alert('Đã thêm vào giỏ hàng!');
+    renderCart();
   }
 
-  updateCartCount();
+  renderCart();
 </script>
 
 </body>
