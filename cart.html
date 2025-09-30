@@ -18,31 +18,40 @@
   <div class="total" id="total"></div>
 
 <script>
-  let cart = JSON.parse(localStorage.getItem('cart') || '[]');
-
-  function renderCart() {
-    let html = '';
-    let total = 0;
-    cart.forEach((item, index) => {
-      total += item.price;
-      html += `<div class="item">
-        <div>${item.name}</div>
-        <div>${item.price.toLocaleString('vi-VN')}₫ 
-          <span class="remove" onclick="removeItem(${index})">Xóa</span>
-        </div>
-      </div>`;
-    });
-    document.getElementById('cart-items').innerHTML = html || 'Giỏ hàng trống.';
-    document.getElementById('total').textContent = cart.length ? `Tổng: ${total.toLocaleString('vi-VN')}₫` : '';
+  // Safe storage: dùng localStorage nếu có, fallback sang biến tạm
+  function getCart() {
+    try {
+      return JSON.parse(localStorage.getItem('cart') || '[]');
+    } catch (e) {
+      return window.cartFallback || [];
+    }
+  }
+  function saveCart(cart) {
+    try {
+      localStorage.setItem('cart', JSON.stringify(cart));
+    } catch (e) {
+      window.cartFallback = cart;
+    }
   }
 
-  function removeItem(index) {
-    cart.splice(index,1);
-    localStorage.setItem('cart', JSON.stringify(cart));
-    renderCart();
+  let cart = getCart();
+
+  function updateCartCount() {
+    const cartLink = document.getElementById('cart-link');
+    if (cartLink) {
+      cartLink.textContent = `Giỏ hàng (${cart.length})`;
+    }
   }
 
-  renderCart();
+  function addToCart(name, price) {
+    cart.push({name, price});
+    saveCart(cart);
+    updateCartCount();
+    alert('Đã thêm vào giỏ hàng!');
+  }
+
+  updateCartCount();
 </script>
+
 </body>
 </html>
