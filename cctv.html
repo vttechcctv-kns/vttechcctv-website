@@ -305,9 +305,24 @@
     </div>
   </footer>
   
-  <script>
-  // Khởi tạo giỏ hàng từ localStorage
-  let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+ <script>
+  // Safe storage: dùng localStorage nếu có, fallback sang biến tạm
+  function getCart() {
+    try {
+      return JSON.parse(localStorage.getItem('cart') || '[]');
+    } catch (e) {
+      return window.cartFallback || [];
+    }
+  }
+  function saveCart(cart) {
+    try {
+      localStorage.setItem('cart', JSON.stringify(cart));
+    } catch (e) {
+      window.cartFallback = cart;
+    }
+  }
+
+  let cart = getCart();
 
   function updateCartCount() {
     const cartLink = document.getElementById('cart-link');
@@ -318,7 +333,7 @@
 
   function addToCart(name, price) {
     cart.push({name, price});
-    localStorage.setItem('cart', JSON.stringify(cart));
+    saveCart(cart);
     updateCartCount();
     alert('Đã thêm vào giỏ hàng!');
   }
