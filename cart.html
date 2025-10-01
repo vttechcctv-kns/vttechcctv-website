@@ -60,58 +60,24 @@
   <div id="cart-items"></div>
   <div class="total" id="total"></div>
 
-<script>
-   // Khởi tạo giỏ hàng từ localStorage
-  let cart = JSON.parse(localStorage.getItem('cart') || '[]');
-
-  function updateCartCount() {
-    document.getElementById('cart-link').textContent = `Giỏ hàng (${cart.length})`;
-  }
-
-  function addToCart(name, price) {
-    cart.push({name, price});
-    localStorage.setItem('cart', JSON.stringify(cart));
-    updateCartCount();
-    alert('Đã thêm vào giỏ hàng!');
-  }
-
-  updateCartCount();
-  function getCart() {
-    return JSON.parse(localStorage.getItem("cart") || "[]");
-  }
-  function saveCart(cart) {
-    localStorage.setItem("cart", JSON.stringify(cart));
-  }
-
-  let cart = getCart();
-
-  function renderCart() {
-    let html = "";
-    let total = 0;
-    cart.forEach((item, index) => {
-      total += item.price;
-      html += `
-        <div class="item">
-          <span>${item.name}</span> - 
-          <span>${item.price.toLocaleString("vi-VN")}₫</span>
-          <button onclick="removeItem(${index})">Xóa</button>
-        </div>
-      `;
+    <script>
+  function getCart(){ return JSON.parse(localStorage.getItem("cart")||"[]"); }
+  function saveCart(cart){ localStorage.setItem("cart",JSON.stringify(cart)); }
+  let cart=getCart();
+  function renderCart(){
+    let html=""; let total=0;
+    cart.forEach((item,index)=>{
+      total+=item.price;
+      html+=`<div>${item.name} - ${item.price.toLocaleString("vi-VN")}₫ <button onclick="removeItem(${index})">Xóa</button></div>`;
     });
-    document.getElementById("cart-items").innerHTML =
-      html || "Giỏ hàng trống.";
-    document.getElementById("total").textContent =
-      cart.length > 0 ? `Tổng: ${total.toLocaleString("vi-VN")}₫` : "";
+    document.getElementById("cart-items").innerHTML=html||"Giỏ hàng trống.";
+    document.getElementById("total").textContent=cart.length>0?`Tổng: ${total.toLocaleString("vi-VN")}₫`:"";
+    let cartLink=document.getElementById("cart-link");
+    if(cartLink) cartLink.textContent=`Giỏ hàng (${cart.length})`;
   }
-
-  function removeItem(index) {
-    cart.splice(index, 1);
-    saveCart(cart);
-    renderCart();
-  }
-
+  function removeItem(i){ cart.splice(i,1); saveCart(cart); renderCart(); }
   renderCart();
 </script>
-
+    
 </body>
 </html>
