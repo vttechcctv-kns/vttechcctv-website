@@ -185,49 +185,22 @@
     </div>
   </footer>
 
- <script>
-    // Khởi tạo giỏ hàng từ localStorage
-  let cart = JSON.parse(localStorage.getItem('cart') || '[]');
-
-  function updateCartCount() {
-    document.getElementById('cart-link').textContent = `Giỏ hàng (${cart.length})`;
-  }
-
-  function addToCart(name, price) {
+<script>
+  function getCart(){ return JSON.parse(localStorage.getItem("cart")||"[]"); }
+  function saveCart(cart){ localStorage.setItem("cart", JSON.stringify(cart)); }
+  function addToCart(name, price){
+    let cart=getCart();
     cart.push({name, price});
-    localStorage.setItem('cart', JSON.stringify(cart));
-    updateCartCount();
-    alert('Đã thêm vào giỏ hàng!');
-  }
-
-  updateCartCount();
-  // Hàm lấy giỏ hàng từ localStorage
-  function getCart() {
-    return JSON.parse(localStorage.getItem("cart") || "[]");
-  }
-
-  // Hàm lưu giỏ hàng
-  function saveCart(cart) {
-    localStorage.setItem("cart", JSON.stringify(cart));
-  }
-
-  // Hàm thêm sản phẩm
-  function addToCart(name, price) {
-    let cart = getCart();
-    cart.push({ name, price });
     saveCart(cart);
     alert("Đã thêm vào giỏ hàng!");
     updateCartCount();
   }
-
-  // Cập nhật số lượng giỏ hàng trên menu
-  function updateCartCount() {
-    let cart = getCart();
-    let cartLink = document.getElementById("cart-link");
-    if (cartLink) cartLink.textContent = `Giỏ hàng (${cart.length})`;
+  function updateCartCount(){
+    let cart=getCart();
+    let link=document.getElementById("cart-link");
+    if(link) link.textContent=`Giỏ hàng (${cart.length})`;
   }
-
-  updateCartCount(); // chạy khi load trang
+  updateCartCount();
 </script>
 
 </body>
