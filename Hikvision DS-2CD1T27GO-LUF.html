@@ -18,6 +18,13 @@
     .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:12px}
     .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);border:1px solid #eef5fb}
+    .product a {
+                text-decoration: none;   /* Bỏ gạch chân */
+                color: inherit;          /* Giữ nguyên màu chữ */
+               }
+    .product a: hover {
+                color: #007bff;          /* Đổi màu khi rê chuột nếu muốn */
+                      }
     .product-card img{width:100%;height:600px;object-fit:cover;border-radius:8px}
     .product-title{font-weight:600;margin:8px 0}
     .price{color:#0b5edf;font-weight:700}
