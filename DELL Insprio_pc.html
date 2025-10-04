@@ -1,0 +1,76 @@
+!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VTTECH - CAMERA-HK</title>
+  <link rel="icon" href="hình/LOGO2.png" />
+  <style>
+    :root{--accent:#0b74de;--muted:#6b7280;--card:#ffffff;--bg:#f7fafc}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0;background:var(--bg);color:#0f172a}
+    header{background:#fff;border-bottom:1px solid #e6edf3}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{display:flex;align-items:center;gap:12px;font-weight:700}
+    .logo img{height:40px}
+    .menu{display:flex;gap:12px;align-items:center}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:12px}
+    .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);border:1px solid #eef5fb}
+    .product-card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+    .product-title{font-weight:600;margin:8px 0}
+    .price{color:#0b5edf;font-weight:700}
+    footer{background:#0b1220;color:#fff;padding:30px 0;margin-top:30px}
+  </style>
+ 
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <img src="hình/LOGO2.png" />
+        <div>
+          <div>VTTECH</div>
+          <div style="font-size:12px;color:var(--accent)">Công nghệ & Thiết bị</div>
+        </div>
+      </div>
+
+  <nav class="menu">
+         <a href="trangchu.html" style="color:var(--accent);text-decoration:none">Trang chủ</a>
+         <a href="all.html" style="color:var(--accent);text-decoration:none">Tất cả</a>
+         <a href="cctv.html" style="color:var(--accent);text-decoration:none">Camera & CCTV</a>
+         <a href="drill.html" style="color:var(--accent);text-decoration:none">Máy khoan Pin</a>
+         <a href="pc.html" style="color:var(--accent);text-decoration:none">Máy tính & Laptop</a>
+         <a href="parts.html" style="color:var(--accent);text-decoration:none">Linh kiện</a>
+         <a href="network.html" style="color:var(--accent);text-decoration:none">Thiết bị mạng</a>
+         <a id="cart-link" href="cart.html">Giỏ hàng (0)</a>
+      </nav>
+</div>
+    </section>
+<h1>Camera Hikvision DS-2CD1T27GO-LUF</h1>
+<p><b>Giá:</b> 1,200,000₫</p>
+<p><b>Mô tả:</b> Camera IP Hikvision DS-2CD1T27GO-LUF 4MP độ phân giải cao, hỗ trợ hồng ngoại ban đêm, chống nước IP67.</p>
+<button onclick="addToCart('Camera Hikvision DS-2CD1T27GO-LUF',2150000)">Mua ngay</button>
+<hr><h2>Sản phẩm tương tự</h2>
+<ul><li><a href="all.html">Xem thêm sản phẩm khác</a></li></ul>
+
+<script>
+  function getCart(){ return JSON.parse(localStorage.getItem("cart")||"[]"); }
+  function saveCart(cart){ localStorage.setItem("cart", JSON.stringify(cart)); }
+  function addToCart(name, price){
+    let cart=getCart();
+    cart.push({name, price});
+    saveCart(cart);
+    alert("Đã thêm vào giỏ hàng!");
+    updateCartCount();
+  }
+  function updateCartCount(){
+    let cart=getCart();
+    let link=document.getElementById("cart-link");
+    if(link) link.textContent=`Giỏ hàng (${cart.length})`;
+  }
+  updateCartCount();
+</script>
+
+</body></html>
