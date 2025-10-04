@@ -63,9 +63,13 @@
          <a id="cart-link" href="cart.html">Giỏ hàng (0)</a>
       </nav>
       </div>
+      </header>
+  <main class="container">
+    <h2>Hàng trong giỏ</h2>
+    <div class="Hàng trong giỏ">
   <div id="cart-items"></div>
   <div class="total" id="total"></div>
-
+     </div>
     <script>
   function getCart(){ return JSON.parse(localStorage.getItem("cart")||"[]"); }
   function saveCart(cart){ localStorage.setItem("cart",JSON.stringify(cart)); }
