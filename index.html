@@ -22,7 +22,7 @@
     .hero{display:flex;gap:20px;align-items:center;padding:36px 0}
     .left{flex:1}
     .hero h1{font-size:20px;margin:0 0 10px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:10px}
+    .grid{display:flex;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:10px}
     .product a {
                 text-decoration: none;   /* Bỏ gạch chân */
                 color: inherit;          /* Giữ nguyên màu chữ */
@@ -111,13 +111,13 @@
       </div>
     </section>
 
-    <section id="products" style="margin-top:12px">
+    <section id="products" style="margin-top:20px">
       <h3>Sản phẩm nổi bật</h3>
       
-      <div class="grid" style="margin-top:12px">
+      <div class="grid" style="margin-top:20px">
 
           <!-- Product 1 -->
-        <div class="product-card" data-cat="Camera & CCTV">
+        <div class="card product-card" data-cat="Camera & CCTV">
           <a href="Hikvision DS-2CD1T27GO-LUF.html" style="color:var(--accent);text-decoration:none">
           <img src="Camera/DS-2CD1T27GO-LUF.png" alt="Camera & CCTV" />
           <div class="product-title">Camera Hikvision DS-2CD1T27GO-LUF</div>
