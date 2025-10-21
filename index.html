@@ -26,6 +26,8 @@ header{background:#fff;border-bottom:1px solid #e6edf3}
 .product a:hover{color:var(--accent)}
 .product-title{font-weight:600;margin:8px 0}
 .price{color:#0b5edf;font-weight:700}
+    <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 
   </style>
 
@@ -362,24 +364,6 @@ header{background:#fff;border-bottom:1px solid #e6edf3}
       </div>
     </div>
   </footer>
-
- <script>
-  function getCart(){ return JSON.parse(localStorage.getItem("cart")||"[]"); }
-  function saveCart(cart){ localStorage.setItem("cart", JSON.stringify(cart)); }
-  function addToCart(name, price){
-    let cart=getCart();
-    cart.push({name, price});
-    saveCart(cart);
-    alert("Đã thêm vào giỏ hàng!");
-    updateCartCount();
-  }
-  function updateCartCount(){
-    let cart=getCart();
-    let link=document.getElementById("cart-link");
-    if(link) link.textContent=`Giỏ hàng (${cart.length})`;
-  }
-  updateCartCount();
-</script>
   
 </body>
 </html>
