@@ -7,43 +7,26 @@
   <meta name="description" content="VTTECH - Công ty TNHH Công nghệ Điện tử. Cung cấp camera CCTV, máy khoan pin, máy tính, linh kiện và thiết bị mạng. Bảo hành, tư vấn kỹ thuật, lắp đặt." />
   <link rel="icon" href="LOGO2.png" />
   <style>
-    /* Simple responsive CSS — copy to your project or host as a single HTML file */
-    :root{--accent:#0b74de;--muted:#6b7280;--card:#ffffff;--bg:#f7fafc}
-    *{box-sizing:border-box}
-    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0;background:var(--bg);color:#0f172a}
-    header{background:#fff;border-bottom:1px solid #e6edf3}
-    .container{max-width:1200px;margin:0 auto;padding:20px}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:10px}
-    .logo{display:flex;align-items:center;gap:20px;font-weight:700}
-    .logo img{height:40px}
-    .menu{display:flex;gap:30px;align-items:right}
-    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
-    .search{flex:1;margin:0 40px}
-    .hero{display:flex;gap:20px;align-items:center;padding:36px 0}
-    .left{flex:1}
-    .hero h1{font-size:20px;margin:0 0 10px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:10px}
-    .product a {
-                text-decoration: none;   /* Bỏ gạch chân */
-                color: inherit;          /* Giữ nguyên màu chữ */
-               }
-    .product a: hover {
-                color: #007bff;          /* Đổi màu khi rê chuột nếu muốn */
-                      }
-    .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);border:1px solid #eef5fb}
-    .category-list{display:flex;gap:10px;flex-wrap:wrap}
-    .category{background:#fff;padding:10px 12px;border-radius:10px;border:1px solid #e6eef8;text-align:center;min-width:240px}
-    .product-card img{
-  width: 100%;          /* Ảnh luôn chiếm hết khung chứa */
-  height: 350px;        /* Chiều cao cố định */
-  object-fit: cover;    /* Cắt ảnh gọn, không méo */
-  border-radius: 8px;   /* Bo góc nhẹ cho đẹp */
-}
-    .product-title{font-weight:600;margin:8px 0}
-    .price{color:#0b5edf;font-weight:700}
-    footer{background:#0b1220;color:#fff;padding:20px 0;margin-top:20px}
-    .contact{display:flex;gap:16px;flex-wrap:wrap}
-    @media (max-width:1100px){.hero{flex-direction:column}.search{order:3;margin:10px 0}}
+   :root{--accent:#0b74de;--muted:#6b7280;--card:#ffffff;--bg:#f7fafc}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0;background:var(--bg);color:#0f172a}
+header{background:#fff;border-bottom:1px solid #e6edf3}
+.container{max-width:1200px;margin:0 auto;padding:20px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.logo{display:flex;align-items:center;gap:20px;font-weight:700}
+.logo img{height:40px}
+.menu{display:flex;gap:30px;align-items:right}
+.btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;border:none;cursor:pointer}
+.search{flex:1;margin:0 40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);border:1px solid #eef5fb;transition:transform 0.2s, box-shadow 0.2s}
+.card:hover{transform:scale(1.02);box-shadow:0 4px 10px rgba(0,0,0,0.1)}
+.product-card img{width:100%;height:260px;object-fit:cover;border-radius:8px}
+.product a{text-decoration:none;color:inherit}
+.product a:hover{color:var(--accent)}
+.product-title{font-weight:600;margin:8px 0}
+.price{color:#0b5edf;font-weight:700}
+
   </style>
 
 </head>
@@ -182,14 +165,14 @@
               <div style="font-size:12px;color:var(--muted)">Bảo hành 36 tháng</div>
             </div>
             <div>
-              </a>
+            </a>
               <button class="btn" onclick="addToCart('SSD 1TB — WD')">Mua</button>
             </div>
           </div>
         </div>
         
         <!-- Product 5 -->
-        <div class="card product-card"
+        <div class="card product-card">
           <a href="Hikvision DS-2CD1T27GO-LUF.html" style="color:var(--accent);text-decoration:none">
           <img src="Network/Router Cân bằng tải Gigabit Dual-WAN DRAYTEK VIGOR 2915 Chính hãng.png" alt="Thiết bị mạng" />
           <div class="product-title">Thiết bị cân bằng tải Draytek-2927</div>
@@ -200,7 +183,7 @@
               <div style="font-size:12px;color:var(--muted)">Bảo hành 24 tháng</div>
             </div>
             <div>
-                </a>
+            </a>
               <button class="btn" onclick="addToCart('Router Gigabit SOHO — NetPro X1')">Mua</button>
             </div>
           </div>
@@ -236,13 +219,15 @@
               <div style="font-size:12px;color:var(--muted)">Bảo hành 24 tháng</div>
             </div>
             <div>
-              <div><button class="btn" onclick="addToCart('Router Gigabit SOHO — NetPro X1')">Mua</button></div>
+          </a>
+              <button class="btn" onclick="addToCart('Router Gigabit SOHO — NetPro X1')">Mua</button>
             </div>
           </div>
         </div>
         
           <!-- Product 8 -->
         <div class="card product-card">
+          <a href="Hikvision DS-2CD1T27GO-LUF.html" style="color:var(--accent);text-decoration:none">
           <img src="Network/DRAYTEK-2927.png" alt="Thiết bị mạng" />
           <div class="product-title">Thiết bị cân bằng tải Draytek-2927</div>
           <div style="color:var(--muted);font-size:13px">VPN, QoS, 4x LAN, quản lý dễ dàng</div>
@@ -252,7 +237,7 @@
               <div style="font-size:12px;color:var(--muted)">Bảo hành 24 tháng</div>
             </div>
             <div>
-                </a>
+            </a>
               <button class="btn" onclick="addToCart('Router Gigabit SOHO — NetPro X1')">Mua</button>
             </div>
           </div>
@@ -270,7 +255,7 @@
               <div style="font-size:12px;color:var(--muted)">Bảo hành 6 tháng</div>
             </div>
             <div>
-                </a>
+            </a>
               <button class="btn" onclick="addToCart('WF-AG100PRO')">Mua</button>
             </div>
           </div>
@@ -288,14 +273,14 @@
               <div style="font-size:12px;color:var(--muted)">Bảo hành 24 tháng</div>
             </div>
             <div>
-                </a>
+            </a>
               <button class="btn" onclick="addToCart('Router Gigabit SOHO — NetPro X1')">Mua</button>
             </div>
           </div>
         </div>
         
           <!-- Product 11 -->
-        <div class="card product-card"
+        <div class="card product-card">
           <a href="Hikvision DS-2CD1T27GO-LUF.html" style="color:var(--accent);text-decoration:none">
           <img src="PC/Dell Vostro 3530 i5-1334U8GB512GB SSD15.6 .png" alt="Máy tinh & Laptop" />
           <div class="product-title">Dell Vostro 3530 i5-1334U8GB512GB SSD15.6 .</div>
@@ -306,7 +291,7 @@
               <div style="font-size:12px;color:var(--muted)">Bảo hành 12 tháng</div>
             </div>
             <div>
-                </a>
+            </a>
               <button class="btn" onclick="addToCart('Dell Vostro 3530 i5-1334U8GB512GB SSD15.6 ')">Mua</button>
             </div>
           </div>
@@ -324,13 +309,12 @@
               <div style="font-size:12px;color:var(--muted)">Bảo hành 24 tháng</div>
             </div>
             <div>
-                </a>
+          </a>
               <button class="btn" onclick="addToCart('Router Gigabit SOHO — NetPro X1')">Mua</button>
             </div>
           </div>
         </div>
-      
-      </div>
+    
     </section>
 
     <section id="why" style="margin-top:24px">
