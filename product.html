@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chi tiết sản phẩm — VTTECH</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .product-hero{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;margin-top:18px}
+    .product-hero img{width:420px;max-width:100%;height:auto;border-radius:8px}
+    .product-meta{max-width:560px}
+    .specs{margin-top:12px}
+    .specs dt{font-weight:600}
+    .specs dd{margin:0 0 8px 0;color:var(--muted)}
+    .products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .products-grid .product-card{height:100%;display:flex;flex-direction:column}
+    .list-hero{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
+    .filters{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0;align-items:center}
+    .pagination{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;align-items:center}
+    .page-btn{padding:6px 10px;border-radius:6px;border:1px solid #e6edf3;background:#fff;cursor:pointer}
+    .page-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo"><img src="LOGO2.png" alt="VTTECH" /><div class="brand"><div>VTTECH</div><div style="font-size:12px;color:var(--accent)">Công nghệ & Thiết bị</div></div></div>
+      <nav class="menu">
+        <a href="index.html" class="meta-small">Trang chủ</a>
+        <a id="cart-link" href="cart.html" class="cart-pill">Giỏ hàng (0)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="product-root"></div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div><div style="font-weight:700">VTTECH</div><div class="meta-small">© VTTECH — Thiết bị & Giải pháp công nghệ</div></div>
+        <div class="meta-small">Hotline: 0938 582 169 — Email: vttechcctv@gmail.com</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+  <script>
+    (function(){
+      
+  function formatPrice(n){ n = Number(n)||0; return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') + '₫'; }
+function qs(name){ const params = new URLSearchParams(location.search); return params.get(name); }
+      function formatVND(n){ return (n||0).toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, ".") + '₫'; }
+      function escapeHtml(str){ return String(str).replace(/[&<>"']/g, function(m){ return {'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":\"&#39;\"}[m]; }); }
+
+      const id = qs('id');
+      const root = document.getElementById('product-root');
+      if(!window.VT_PRODUCTS){ root.innerHTML = '<div class="card"><p>Không có dữ liệu sản phẩm. Vui lòng kiểm tra products.js</p></div>'; return; }
+
+      // collect products array
+      const items = Object.values(window.VT_PRODUCTS);
+
+      if(id && window.VT_PRODUCTS[id]){
+        // render single product with structured data injection
+        const p = window.VT_PRODUCTS[id];
+        root.innerHTML = `
+          <nav class="list-hero"><div><a href="product.html" class="meta-small">Tất cả sản phẩm</a></div><div class="meta-small">SKU: ${escapeHtml(p.sku)}</div></nav>
+          <div class="product-hero">
+            <div><img src="${encodeURI(p.image)}" alt="${escapeHtml(p.name)}" loading="lazy" /></div>
+            <div class="product-meta card">
+              <h1 style="margin-top:0">${escapeHtml(p.name)}</h1>
+              <div style="font-size:18px;color:#0b5edf;margin:6px 0" id="p-price">${formatVND(p.price)}</div>
+              <div class="meta-small">${escapeHtml(p.description)}</div>
+              <div class="specs" style="margin-top:12px">
+                <dl>
+                  <dt>SKU</dt><dd>${escapeHtml(p.sku)}</dd>
+                  <dt>Bảo hành</dt><dd>${escapeHtml(p.warranty)}</dd>
+                  <dt>Danh mục</dt><dd>${escapeHtml(p.category)}</dd>
+                </dl>
+              </div>
+              <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+                <button id="buy-now" class="btn">Mua ngay</button>
+                <button id="add-cart" class="outline-btn">Thêm vào giỏ</button>
+              </div>
+            </div>
+          </div>
+        `;
+
+        // inject JSON-LD Product schema
+        const productSchema = {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": p.name,
+          "image": [ (location.origin + '/' + p.image).replace(/\\/g,'/') ],
+          "description": p.description,
+          "sku": p.sku,
+          "offers": {
+            "@type": "Offer",
+            "url": location.href,
+            "priceCurrency": "VND",
+            "price": p.price.toString(),
+            "availability": "https://schema.org/InStock"
+          }
+        };
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(productSchema);
+        document.head.appendChild(script);
+
+        document.getElementById('add-cart').addEventListener('click', function(){
+          const CART_KEY = 'vttech_cart_v1';
+          const cart = JSON.parse(localStorage.getItem(CART_KEY) || '{"items":[]}');
+          const found = cart.items.find(i=>i.id===p.id);
+          if(found) found.qty += 1; else cart.items.push({id:p.id,name:p.name,price:p.price,qty:1});
+          localStorage.setItem(CART_KEY, JSON.stringify(cart));
+          const pill = document.getElementById('cart-link');
+          if(pill){ const count = cart.items.reduce((s,i)=>s+i.qty,0); pill.textContent = 'Giỏ hàng ('+count+')'; }
+          alert('Đã thêm vào giỏ');
+        });
+
+        document.getElementById('buy-now').addEventListener('click', function(){
+          const CART_KEY = 'vttech_cart_v1';
+          const cart = JSON.parse(localStorage.getItem(CART_KEY) || '{"items":[]}');
+          const found = cart.items.find(i=>i.id===p.id);
+          if(found) found.qty += 1; else cart.items.push({id:p.id,name:p.name,price:p.price,qty:1});
+          localStorage.setItem(CART_KEY, JSON.stringify(cart));
+          location.href = 'cart.html';
+        });
+
+      } else {
+        // render grid with filters and pagination
+        // build category list
+        const categories = Array.from(new Set(items.map(it=>it.category))).sort();
+        let html = '<div style="display:flex;justify-content:space-between;align-items:center"><h2>Tất cả sản phẩm</h2><div class="meta-small">Hiển thị ' + items.length + ' sản phẩm</div></div>';
+
+        html += '<div class="filters card">';
+        html += '<label class="meta-small">Danh mục: <select id="filter-category"><option value="">Tất cả</option>';
+        categories.forEach(c=> html += '<option value="'+escapeHtml(c)+'">'+escapeHtml(c)+'</option>');
+        html += '</select></label>';
+        html += '<label class="meta-small">Giá từ: <input id="filter-min" type="number" placeholder="0" style="width:120px;padding:6px;border-radius:6px;border:1px solid #e6edf3" /></label>';
+        html += '<label class="meta-small">đến: <input id="filter-max" type="number" placeholder="999999999" style="width:120px;padding:6px;border-radius:6px;border:1px solid #e6edf3" /></label>';
+        html += '<button id="filter-apply" class="btn">Lọc</button>';
+        html += '<button id="filter-reset" class="outline-btn">Reset</button>';
+        html += '</div>';
+
+        html += '<div id="grid-root"></div>';
+        html += '<div id="pager" class="pagination"></div>';
+
+        root.innerHTML = html;
+
+        // pagination settings
+        let perPage = 6;
+        let currentPage = 1;
+        let filtered = items.slice();
+
+        const gridRoot = document.getElementById('grid-root');
+        const pager = document.getElementById('pager');
+
+        function renderGrid(){
+          const start = (currentPage-1)*perPage;
+          const pageItems = filtered.slice(start, start+perPage);
+          let out = '<div class="products-grid">';
+          pageItems.forEach(p=>{
+            out += `
+              <article class="product-card" data-id="${escapeHtml(p.id)}">
+                <a href="product.html?id=${encodeURIComponent(p.id)}" style="color:var(--accent);text-decoration:none">
+                  <img src="${encodeURI(p.image)}" alt="${escapeHtml(p.name)}" loading="lazy" />
+                  <div class="product-title">${escapeHtml(p.name)}</div>
+                </a>
+                <div class="meta-small">${escapeHtml(p.description)}</div>
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+                  <div class="price">${formatVND(p.price)}</div>
+                  <div style="font-size:12px;color:var(--muted)">${escapeHtml(p.warranty)}</div>
+                </div>
+                <div style="margin-top:8px" class="product-actions">
+                  <button class="btn add-to-cart" type="button">Mua</button>
+                  <a href="product.html?id=${encodeURIComponent(p.id)}" class="outline-btn" style="text-decoration:none">Chi tiết</a>
+                </div>
+              </article>
+            `;
+          });
+          out += '</div>';
+          gridRoot.innerHTML = out;
+          renderPager();
+        }
+
+        function renderPager(){
+          const total = filtered.length;
+          const pages = Math.max(1, Math.ceil(total / perPage));
+          let out = '';
+          if(pages <= 1){ pager.innerHTML = ''; return; }
+          for(let i=1;i<=pages;i++){
+            out += '<button class="page-btn'+(i===currentPage? ' active':'') + '" data-page="'+i+'">'+i+'</button>';
+          }
+          pager.innerHTML = out;
+        }
+
+        // apply filters
+        function applyFilters(){
+          const cat = document.getElementById('filter-category').value;
+          const min = Number(document.getElementById('filter-min').value || 0);
+          const max = Number(document.getElementById('filter-max').value || 999999999);
+          filtered = items.filter(it=>{
+            const okCat = !cat || it.category === cat;
+            const okPrice = (it.price >= min && it.price <= max);
+            return okCat && okPrice;
+          });
+          currentPage = 1;
+          renderGrid();
+        }
+
+        document.getElementById('filter-apply').addEventListener('click', applyFilters);
+        document.getElementById('filter-reset').addEventListener('click', function(){
+          document.getElementById('filter-category').value = '';
+          document.getElementById('filter-min').value = '';
+          document.getElementById('filter-max').value = '';
+          filtered = items.slice();
+          currentPage = 1;
+          renderGrid();
+        });
+
+        pager.addEventListener('click', function(e){
+          const b = e.target.closest('.page-btn');
+          if(!b) return;
+          const p = Number(b.getAttribute('data-page'));
+          if(!isNaN(p)){ currentPage = p; renderGrid(); window.scrollTo({top:0,behavior:'smooth'}); }
+        });
+
+        // initial
+        renderGrid();
+      }
+
+    })();
+  </script>
+  <script src="assets/cart-badge.js"></script>
+</body>
+</html>

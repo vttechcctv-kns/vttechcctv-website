@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Máy khoan Pin — VTTECH</title><link rel="stylesheet" href="styles.css"/></head>
+1
+<header>
+    <div class="container nav" role="navigation" aria-label="Main navigation">
+      <div class="logo" aria-hidden="false">
+        <img src="LOGO2.png" alt="VTTECH logo" />
+        <div class="brand">
+          <div style="font-size:18px">VTTECH</div>
+          <div style="font-size:12px;color:var(--accent)">Công nghệ & Thiết bị</div>
+        </div>
+      </div>
+
+      <div class="search-wrap" aria-hidden="false">
+        <label for="site-search" class="meta-small" style="display:block;margin-bottom:6px">Tìm sản phẩm</label>
+        <input id="site-search" type="search" placeholder="Tìm sản phẩm, model, mã..." />
+      </div>
+
+      <nav class="menu" aria-label="Menu chính">
+        <a href="#categories" class="meta-small" style="text-decoration:none;color:var(--muted)">Danh mục</a>
+        <a href="#products" class="meta-small" style="text-decoration:none;color:var(--muted)">Sản phẩm</a>
+        <a id="cart-link" href="cart.html" class="cart-pill" aria-live="polite">Giỏ hàng (0)</a>
+        <a href="#contact" class="btn" style="text-decoration:none">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+<header><div class="container nav"><div class="logo"><img src="LOGO2.png" alt="VTTECH"/></div><nav class="menu"><a href="index.html" class="meta-small">Trang chủ</a><a id="cart-link" href="cart.html" class="cart-pill">Giỏ hàng (0)</a></nav></div></header>
+<main class="container" style="padding-top:20px"><h2>Máy khoan Pin</h2><div id="grid-root" class="products-grid"></div></main>
+<footer><div class="container"><div style="display:flex;justify-content:space-between"><div style="font-weight:700">VTTECH</div><div class="meta-small">Hotline: 0938 582 169</div></div></div></footer>
+<script src="products.js"></script>
+<script>
+(function(){
+  const CAT = "Máy khoan Pin";
+  const products = Object.values(window.VT_PRODUCTS||{});
+  const root = document.getElementById('grid-root');
+  const items = (CAT==='all') ? products : products.filter(p => p.category === CAT);
+  if(!items.length){ root.innerHTML = '<div class="card"><p>Không có sản phẩm</p></div>'; return; }
+
+  function formatPrice(n){
+    n = Number(n)||0;
+    return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + '₫';
+  }
+
+  const html = items.map(p => {
+    return `
+      <article class="product-card" data-id="${p.id}" data-name="${p.name}" data-price="${p.price}">
+        <a href="product.html?id=${p.id}">
+          <img src="${p.image}" alt="${p.name}" loading="lazy"/>
+          <div class="product-title">${p.name}</div>
+        </a>
+        <div class="meta-small">${p.description}</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+          <div class="price">${'${'}formatPrice(p.price)${'}'}</div>
+          <div class="meta-small">${'${'}p.warranty${'}'}</div>
+        </div>
+        <div style="margin-top:8px" class="product-actions">
+          <button class="btn add-to-cart">Mua</button>
+          <a class="outline-btn" href="product.html?id=${p.id}">Chi tiết</a>
+        </div>
+      </article>
+    `;
+  }).join('');
+  // fix the `${'${'}...` placeholder above: replace those pseudo markers with actual JS by evaluating a second replace
+  // But simpler: perform a final replace to convert literal "${'${'}formatPrice..." pattern into "${formatPrice...}"
+  const fixed = html.replace(/\$\{'\\\$\{'\}formatPrice\(/g, '${formatPrice(').replace(/\}\{'\}\)/g, ')}');
+  // Actually the above was overcomplicated: instead produce final HTML by replacing the placeholder tokens used.
+  // Simpler approach: regenerate properly here:
+  const finalHtml = items.map(p => `
+      <article class="product-card" data-id="${p.id}" data-name="${p.name}" data-price="${p.price}">
+        <a href="product.html?id=${p.id}">
+          <img src="${p.image}" alt="${p.name}" loading="lazy"/>
+          <div class="product-title">${p.name}</div>
+        </a>
+        <div class="meta-small">${p.description}</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+          <div class="price">${formatPrice(p.price)}</div>
+          <div class="meta-small">${p.warranty}</div>
+        </div>
+        <div style="margin-top:8px" class="product-actions">
+          <button class="btn add-to-cart">Mua</button>
+          <a class="outline-btn" href="product.html?id=${p.id}">Chi tiết</a>
+        </div>
+      </article>
+    `).join('');
+
+  root.innerHTML = finalHtml;
+})();
+</script>
+
+<script>
+(function(){
+  const CAT = "Máy khoan Pin";
+  const products = Object.values(window.VT_PRODUCTS||{});
+  const root = document.getElementById('grid-root');
+  const items = (CAT==='all')?products:products.filter(p=>p.category===CAT);
+  if(!items.length){ root.innerHTML='<div class="card"><p>Không có sản phẩm</p></div>'; return; }
+  root.innerHTML = items.map(p=>`<article class="product-card" data-id="${p.id}" data-name="${p.name}" data-price="${p.price}"><a href="product.html?id=${p.id}"><img src="${p.image}" alt="${p.name}"/><div class="product-title">${p.name}</div></a><div class="meta-small">${p.description}</div><div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px"><div class="price">${p.price}.toString().replace(/\B(?=(\d{3})+(?!\d))/g,'.') + '₫'</div><div class="meta-small">${p.warranty}</div></div><div style="margin-top:8px" class="product-actions"><button class="btn add-to-cart">Mua</button><a class="outline-btn" href="product.html?id=${p.id}">Chi tiết</a></div></article>`).join('');
+})();
+</script>
+  <script src="assets/cart-badge.js"></script>
+</body></html>
