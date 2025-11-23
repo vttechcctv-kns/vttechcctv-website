@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VTTECH - CCTV • Máy khoan pin • Máy tính • Linh kiện • Thiết bị mạng</title>
+  <meta name="description" content="VTTECH - Công ty TNHH Công nghệ Điện tử. Cung cấp camera CCTV, máy khoan pin, máy tính, linh kiện và thiết bị mạng. Bảo hành, tư vấn kỹ thuật, lắp đặt." />
+  <link rel="icon" href="LOGO2.png" />
+  <!-- Structured data for local business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "VTTECH",
+    "description": "VTTECH - Thiết bị & Giải pháp công nghệ: camera CCTV, máy khoan pin, máy tính, linh kiện, thiết bị mạng.",
+    "telephone": "0938582169",
+    "email": "vttechcctv@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "183/7 Đường ba tháng hai, Phường Vườn Lài",
+      "addressLocality": "Thành phố Hồ Chí Minh",
+      "addressCountry": "VN"
+    }
+  }
+  </script>
+
+  <style>
+   :root{
+     --accent:#0b74de;
+     --muted:#6b7280;
+     --card:#ffffff;
+     --bg:#f7fafc;
+     --radius:10px;
+     --container:1200px;
+   }
+   *{box-sizing:border-box}
+   html,body{height:100%}
+   body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0;background:var(--bg);color:#0f172a;line-height:1.4}
+   header{background:#fff;border-bottom:1px solid #e6edf3;position:sticky;top:0;z-index:20}
+   .container{max-width:var(--container);margin:0 auto;padding:20px}
+   .nav{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+   .logo{display:flex;align-items:center;gap:14px;font-weight:700}
+   .logo img{height:44px;width:auto}
+   .logo .brand{line-height:1}
+   .menu{display:flex;gap:20px;align-items:center}
+   .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;border:none;cursor:pointer}
+   .outline-btn{padding:10px 14px;border-radius:8px;border:1px solid #dbeffd;text-decoration:none;color:var(--accent);background:#fff}
+   .search-wrap{flex:1;min-width:220px;margin:0 20px}
+   .search-wrap input[type="search"]{width:100%;padding:12px 14px;border-radius:8px;border:1px solid #e6edf3}
+   .hero{display:flex;gap:20px;align-items:center;padding:30px 0;flex-wrap:wrap}
+   .hero .left{flex:1;min-width:260px}
+   .hero h1{font-size:20px;margin:0 0 8px}
+   .hero p{color:var(--muted);margin:0 0 16px}
+   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:12px}
+   .card{background:var(--card);padding:14px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(15,23,42,0.06);border:1px solid #eef5fb;transition:transform .18s,box-shadow .18s}
+   .category-list{display:flex;gap:10px;flex-wrap:wrap}
+   .category{background:#fff;padding:10px 12px;border-radius:10px;border:1px solid #e6eef8;text-align:center;min-width:160px}
+   .product-card img{width:100%;height:220px;object-fit:cover;border-radius:8px}
+   .product-card{border:1px solid #e6edf3;border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:8px}
+   .product-card:hover{transform:translateY(-4px)}
+   .product-title{font-weight:600;margin:4px 0}
+   .price{color:#0b5edf;font-weight:700;font-size:16px}
+   footer{background:#0b1220;color:#fff;padding:20px 0;margin-top:20px}
+   .contact{display:flex;gap:16px;flex-wrap:wrap}
+   .meta-small{color:var(--muted);font-size:13px}
+   .product-actions{display:flex;gap:8px;align-items:center;margin-top:auto}
+   .cart-pill{background:#fff;color:var(--accent);padding:6px 10px;border-radius:999px;border:1px solid #dbeffd;font-weight:600}
+   /* responsive tweaks */
+   @media (max-width:900px){
+     .hero{flex-direction:column;align-items:stretch}
+     .search-wrap{order:3;margin:10px 0}
+     .menu{flex-wrap:wrap;gap:8px}
+   }
+
+   /* enforce 4 columns grid on desktop, responsive */
+   .products-grid { display:grid; grid-template-columns: repeat(4, 1fr); gap:18px; margin-top:16px; }
+   @media (max-width:1100px){ .products-grid { grid-template-columns: repeat(3, 1fr); } }
+   @media (max-width:800px){ .products-grid { grid-template-columns: repeat(2, 1fr); } }
+   @media (max-width:480px){ .products-grid { grid-template-columns: repeat(1, 1fr); } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Main navigation">
+      <div class="logo" aria-hidden="false">
+        <img src="LOGO2.png" alt="VTTECH logo" />
+        <div class="brand">
+          <div style="font-size:18px">VTTECH</div>
+          <div style="font-size:12px;color:var(--accent)">Công nghệ & Thiết bị</div>
+        </div>
+      </div>
+
+      <div class="search-wrap" aria-hidden="false">
+        <label for="site-search" class="meta-small" style="display:block;margin-bottom:6px">Tìm sản phẩm</label>
+        <input id="site-search" type="search" placeholder="Tìm sản phẩm, model, mã..." />
+      </div>
+
+      <nav class="menu" aria-label="Menu chính">
+        <a href="#categories" class="meta-small" style="text-decoration:none;color:var(--muted)">Danh mục</a>
+        <a href="#products" class="meta-small" style="text-decoration:none;color:var(--muted)">Sản phẩm</a>
+        <a id="cart-link" href="cart.html" class="cart-pill" aria-live="polite">Giỏ hàng (0)</a>
+        <a href="#contact" class="btn" style="text-decoration:none">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <section class="hero">
+      <div class="left">
+        <h1>VTTECH — Camera CCTV, Máy khoan pin, Máy tính & Thiết bị mạng</h1>
+        <p>Chúng tôi cung cấp thiết bị chất lượng, bảo hành chính hãng, lắp đặt và tư vấn kỹ thuật chuyên nghiệp.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="#products" class="btn">Xem sản phẩm nổi bật</a>
+          <a href="#contact" class="outline-btn">Yêu cầu báo giá</a>
+        </div>
+      </div>
+
+      <aside style="flex:0 0 360px;min-width:240px" aria-labelledby="promo-title">
+        <div class="card" role="region" aria-label="Ưu đãi hôm nay">
+          <h3 id="promo-title" style="margin-top:0">Ưu đãi hôm nay</h3>
+          <ul style="padding-left:16px;margin:8px 0;color:var(--muted);line-height:1.6">
+            <li>CCTV Full HD 4MP — Giảm 10%</li>
+            <li>Máy khoan pin 18V — Tặng pin phụ</li>
+            <li>Router SOHO — Giao hàng miễn phí</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section id="categories" style="margin-top:20px">
+      <h2>Danh mục sản phẩm</h2>
+      <nav class="menu" aria-label="Danh mục">
+         <a href="index.html" style="color:var(--accent);text-decoration:none">Trang chủ</a>
+         <a href="all.html" style="color:var(--accent);text-decoration:none">Tất cả</a>
+         <a href="cctv.html" style="color:var(--accent);text-decoration:none">Camera & CCTV</a>
+         <a href="drill.html" style="color:var(--accent);text-decoration:none">Máy khoan Pin</a>
+         <a href="pc.html" style="color:var(--accent);text-decoration:none">Máy tính & Laptop</a>
+         <a href="parts.html" style="color:var(--accent);text-decoration:none">Linh kiện</a>
+         <a href="network.html" style="color:var(--accent);text-decoration:none">Thiết bị mạng</a>
+      </nav>
+    </section>
+
+    <!-- Products grid: render here -->
+    <section id="products" style="margin-top:18px">
+      <h3>Sản phẩm nổi bật</h3>
+      <div id="grid-root" class="products-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="why" style="margin-top:24px">
+      <div class="grid">
+        <div class="card">
+          <h4>Giao hàng & Lắp đặt</h4>
+          <p class="meta-small">Dịch vụ giao & lắp đặt tại TP.HCM/ Các tỉnh lân cận. Hỗ trợ kỹ thuật onsite theo yêu cầu.</p>
+        </div>
+        <div class="card">
+          <h4>Bảo hành & Hậu mãi</h4>
+          <p class="meta-small">Chúng tôi cung cấp bảo hành chính hãng và hỗ trợ đổi trả trong thời hạn quy định.</p>
+        </div>
+        <div class="card">
+          <h4>Tư vấn chuyên sâu</h4>
+          <p class="meta-small">Tư vấn tối ưu hệ thống CCTV, mạng, và cấu hình máy tính theo nhu cầu thực tế.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:28px">
+      <h4>Liên hệ đặt hàng / tư vấn</h4>
+      <div class="grid" style="margin-top:16px">
+        <div class="card">
+          <div style="font-weight:700">Thông tin công ty</div>
+          <p class="meta-small">Công ty TNHH Công nghệ Điện tử VTTECH</p>
+          <p>Điện thoại: <strong>0938 582 169</strong></p>
+          <p>Email: <strong>vttechcctv@gmail.com</strong></p>
+          <p class="meta-small">Địa chỉ: 183/7 Đường ba tháng hai, Phường Vườn Lài, Thành phố Hồ Chí Minh</p>
+        </div>
+        <div class="card" aria-labelledby="form-title">
+          <h3 id="form-title">Gửi yêu cầu</h3>
+          <form id="contact-form">
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <input id="cname" name="name" placeholder="Họ tên" required style="padding:10px;border-radius:8px;border:1px solid #e6edf3" />
+              <input id="cphone" name="phone" placeholder="Số điện thoại" required style="padding:10px;border-radius:8px;border:1px solid #e6edf3" />
+              <textarea id="cmessage" name="message" placeholder="Nội dung yêu cầu" rows="4" style="padding:10px;border-radius:8px;border:1px solid #e6edf3"></textarea>
+              <button class="btn" type="submit">Gửi</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div style="font-weight:700">VTTECH</div>
+        <div class="meta-small">Hotline: 0938 582 169 · 0907 443 176 — Email: vttechcctv@gmail.com</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="products1.js"></script>
+  <script src="app.js"></script>
+  <!-- Đặt <script src="products.js"></script> TRƯỚC đoạn script này -->
+<script>
+(function(){
+  // helpers
+  function qs(name){ return new URLSearchParams(location.search).get(name); }
+  function formatPrice(n){ n = Number(n) || 0; return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + '₫'; }
+  function esc(s){ return String(s||'').replace(/[&<>"']/g, function(m){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"}[m]; }); }
+
+  if(!window.VT_PRODUCTS){ console.warn('products1.js chưa nạp hoặc không chứa VT_PRODUCTS'); return; }
+  const items = Object.values(window.VT_PRODUCTS);
+
+  const id = qs('id');
+  const productRoot = document.getElementById('product-root'); // product detail page should have this
+  const gridRoot = document.getElementById('grid-root');       // index/category pages should have this
+
+  if(id){
+    // product detail page flow
+    const p = window.VT_PRODUCTS[id];
+    if(!p){
+      if(productRoot) productRoot.innerHTML = '<div class="card"><p>Sản phẩm không tồn tại</p></div>';
+      return;
+    }
+    // ensure productRoot exists
+    if(!productRoot){
+      // optional: create modal or inject detail into main
+      const container = document.getElementById('main') || document.body;
+      const tmp = document.createElement('div');
+      tmp.id = 'product-root';
+      container.insertBefore(tmp, container.firstChild);
+    }
+    const root = document.getElementById('product-root');
+    root.innerHTML = `
+      <nav style="margin-bottom:12px" class="meta-small"><a href="all.html">Tất cả sản phẩm</a> › ${esc(p.name)}</nav>
+      <div class="product-hero card" style="display:flex;gap:20px;flex-wrap:wrap">
+        <div style="flex:0 0 420px"><img src="${encodeURI(p.image)}" alt="${esc(p.name)}" style="width:100%;object-fit:contain;border-radius:8px" /></div>
+        <div style="flex:1">
+          <h1 style="margin:0 0 8px">${esc(p.name)}</h1>
+          <div style="font-size:20px;color:#0b5edf;font-weight:700">${formatPrice(p.price)}</div>
+          <p class="meta-small">${esc(p.description)}</p>
+          <dl class="specs" style="margin-top:12px">
+            <dt>SKU</dt><dd>${esc(p.sku)}</dd>
+            <dt>Bảo hành</dt><dd>${esc(p.warranty||'')}</dd>
+            <dt>Danh mục</dt><dd>${esc(p.category||'')}</dd>
+          </dl>
+          <div style="margin-top:12px;display:flex;gap:10px">
+            <button id="add-cart-btn" class="btn">Thêm vào giỏ</button>
+            <button id="buy-now-btn" class="outline-btn">Mua ngay</button>
+          </div>
+        </div>
+      </div>
+    `;
+    // handlers (reuse localStorage cart format)
+    document.getElementById('add-cart-btn').addEventListener('click', function(){
+      const KEY='vttech_cart_v1'; const cart=JSON.parse(localStorage.getItem(KEY)||'{"items":[]}');
+      const found = cart.items.find(x=>x.id===p.id);
+      if(found) found.qty += 1; else cart.items.push({id:p.id,name:p.name,price:p.price,qty:1});
+      localStorage.setItem(KEY, JSON.stringify(cart));
+      if(document.getElementById('cart-link')) document.getElementById('cart-link').textContent = 'Giỏ hàng (' + cart.items.reduce((s,i)=>s+i.qty,0) + ')';
+      alert('Đã thêm vào giỏ');
+    });
+    document.getElementById('buy-now-btn').addEventListener('click', function(){
+      const KEY='vttech_cart_v1'; const cart=JSON.parse(localStorage.getItem(KEY)||'{"items":[]}');
+      const found = cart.items.find(x=>x.id===p.id);
+      if(found) found.qty += 1; else cart.items.push({id:p.id,name:p.name,price:p.price,qty:1});
+      localStorage.setItem(KEY, JSON.stringify(cart));
+      location.href = 'cart.html';
+    });
+
+    // inject JSON-LD
+    const schema = {
+      "@context":"https://schema.org/",
+      "@type":"Product",
+      "name": p.name,
+      "image": [ (location.origin + '/' + p.image).replace(/\\/g,'/') ],
+      "description": p.description,
+      "sku": p.sku,
+      "offers": {"@type":"Offer","url": location.href, "priceCurrency":"VND","price": String(p.price),"availability":"https://schema.org/InStock"}
+    };
+    const s = document.createElement('script'); s.type='application/ld+json'; s.text = JSON.stringify(schema);
+    document.head.appendChild(s);
+    return;
+  }
+
+  // grid-page flow
+  if(!gridRoot) return; // nothing to render
+  const itemsToShow = items.slice(); // copy
+  function renderPage(list){
+    if(!list || list.length===0){ gridRoot.innerHTML = '<div class="card"><p>Không có sản phẩm</p></div>'; return; }
+    const html = list.map(p => `
+      <article class="product-card" data-id="${p.id}" data-name="${esc(p.name)}" data-price="${p.price}">
+        <a href="product.html?id=${p.id}" style="color:var(--accent);text-decoration:none">
+          <img src="${encodeURI(p.image)}" alt="${esc(p.name)}" loading="lazy" />
+          <div class="product-title">${esc(p.name)}</div>
+        </a>
+        <div class="meta-small">${esc(p.description)}</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+          <div class="price">${formatPrice(p.price)}</div>
+          <div class="meta-small">${esc(p.warranty||'')}</div>
+        </div>
+        <div class="product-actions">
+          <button class="btn add-to-cart">Mua</button>
+          <a class="outline-btn" href="product.html?id=${p.id}">Chi tiết</a>
+        </div>
+      </article>
+    `).join('');
+    gridRoot.innerHTML = `<div class="products-grid">${html}</div>`;
+    // attach add-to-cart handlers
+    gridRoot.querySelectorAll('.add-to-cart').forEach(btn=>{
+      btn.addEventListener('click', function(e){
+        const art = e.target.closest('.product-card'); if(!art) return;
+        const id = art.dataset.id; const p = window.VT_PRODUCTS[id];
+        const KEY='vttech_cart_v1'; const cart=JSON.parse(localStorage.getItem(KEY)||'{"items":[]}');
+        const found=cart.items.find(x=>x.id===id);
+        if(found) found.qty += 1; else cart.items.push({id:p.id,name:p.name,price:p.price,qty:1});
+        localStorage.setItem(KEY, JSON.stringify(cart));
+        if(document.getElementById('cart-link')) document.getElementById('cart-link').textContent = 'Giỏ hàng (' + cart.items.reduce((s,i)=>s+i.qty,0) + ')';
+        btn.textContent = 'Đã thêm ✓';
+        setTimeout(()=>{ btn.textContent = 'Mua'; },900);
+      });
+    });
+  }
+
+  // initial render (you can implement pagination/filters later)
+  renderPage(itemsToShow);
+
+})();
+</script>
+</body>
+</html>
