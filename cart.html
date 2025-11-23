@@ -4,36 +4,273 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Giỏ hàng — VTTECH</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Giỏ hàng VTTECH - kiểm tra, chỉnh sửa số lượng và thanh toán." />
+  <link rel="icon" href="LOGO2.png" />
+
+  <style>
+    :root{
+      --accent:#0b74de;
+      --muted:#6b7280;
+      --bg:#f7fafc;
+      --card:#fff;
+      --radius:10px;
+      --container:1200px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:0;background:var(--bg);color:#0f172a}
+    .container{max-width:var(--container);margin:0 auto;padding:20px}
+    header{background:#fff;border-bottom:1px solid #e6edf3}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo img{height:36px}
+    h1{margin:8px 0}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);border:1px solid #eef5fb}
+    .cart-list{display:flex;flex-direction:column;gap:12px}
+    .cart-item{display:flex;gap:12px;align-items:center;padding:12px;border-radius:8px;border:1px solid #eef5fb;background:#fff}
+    .cart-item img{width:96px;height:96px;object-fit:cover;border-radius:8px}
+    .item-info{flex:1}
+    .item-title{font-weight:700;margin:0 0 6px}
+    .item-meta{color:var(--muted);font-size:13px}
+    .qty-control{display:flex;align-items:center;gap:8px}
+    .qty-control button{padding:6px 10px;border-radius:8px;border:1px solid #e6edf3;background:#fff;cursor:pointer}
+    .qty-input{width:56px;padding:6px;border-radius:8px;border:1px solid #e6edf3;text-align:center}
+    .price{font-weight:800;color:var(--accent)}
+    .summary{display:flex;flex-direction:column;gap:10px}
+    .summary-row{display:flex;justify-content:space-between;align-items:center}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
+    .outline-btn{padding:8px 12px;border-radius:8px;border:1px solid #dbeffd;background:#fff;cursor:pointer}
+    .muted{color:var(--muted)}
+    .empty{padding:40px;text-align:center;color:var(--muted)}
+    @media (max-width:720px){
+      .cart-item{flex-direction:column;align-items:flex-start}
+      .cart-item img{width:100%;height:200px}
+      .qty-input{width:72px}
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <header class="card" role="banner">
     <div class="container nav">
-      <div class="logo"><img src="LOGO2.png" alt="VTTECH" /><div class="brand"><div>VTTECH</div><div style="font-size:12px;color:var(--accent)">Công nghệ & Thiết bị</div></div></div>
-      <nav class="menu">
-        <a href="index.html" class="meta-small">Tiếp tục mua sắm</a>
-        <a id="cart-link" href="#" class="cart-pill">Giỏ hàng (0)</a>
+      <div class="logo">
+        <img src="LOGO2.png" alt="VTTECH" />
+        <div>
+          <div style="font-weight:700">VTTECH</div>
+          <div style="font-size:13px;color:var(--muted)">Thiết bị & Giải pháp công nghệ</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html" class="outline-btn">Tiếp tục mua sắm</a>
       </nav>
     </div>
   </header>
 
   <main class="container" id="main">
-    <section style="margin-top:24px">
-      <h2>Giỏ hàng của bạn</h2>
-      <div id="cart-root"></div>
+    <section style="margin:18px 0">
+      <h1>Giỏ hàng của bạn</h1>
+      <div class="card" id="cart-container">
+        <!-- nếu rỗng, hiển thị .empty -->
+        <div id="cart-root"></div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
-        <div><div style="font-weight:700">VTTECH</div><div class="meta-small">© VTTECH — Thiết bị & Giải pháp công nghệ</div></div>
-        <div class="meta-small">Hotline: 0938 582 169 — Email: vttechcctv@gmail.com</div>
-      </div>
-    </div>
+  <footer style="padding:20px 0;background:#fff">
+    <div class="container muted">© VTTECH — Thiết bị & Giải pháp công nghệ</div>
   </footer>
 
-  <script src="app.js"></script>
-  <script src="assets/cart-badge.js"></script>
+  <script>
+  (function(){
+    const CART_KEY = 'vttech_cart_v1';
+
+    // Helpers
+    function loadCart(){ try{ return JSON.parse(localStorage.getItem(CART_KEY) || '{"items":[]}'); }catch(e){ return {items:[]}; } }
+    function saveCart(cart){ localStorage.setItem(CART_KEY, JSON.stringify(cart)); updateCartBadge(); }
+    function formatPrice(n){ n = Number(n)||0; return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + '₫'; }
+    function qs(el){ return document.querySelector(el); }
+
+    // Render cart
+    function renderCart(){
+      const root = qs('#cart-root');
+      const cart = loadCart();
+      const items = cart.items || [];
+      if(!items.length){
+        root.innerHTML = '<div class="empty"><h3>Giỏ hàng trống</h3><p>Bạn chưa có sản phẩm nào trong giỏ. <a href="index.html">Tiếp tục mua sắm</a></p></div>';
+        return;
+      }
+
+      // Build list + summary
+      let html = '<div style="display:flex;gap:18px;flex-wrap:wrap">';
+      // left (items)
+      html += '<div style="flex:1;min-width:320px"><div class="cart-list">';
+      items.forEach((it, idx)=>{
+        const subtotal = (Number(it.price)||0) * (Number(it.qty)||1);
+        html += `
+          <div class="cart-item" data-id="${escapeHtml(it.id)}">
+            <img src="${escapeHtml(it.image || 'placeholder.png')}" alt="${escapeHtml(it.name)}" />
+            <div class="item-info">
+              <div class="item-title">${escapeHtml(it.name)}</div>
+              <div class="item-meta">SKU: ${escapeHtml(it.id||'')}</div>
+              <div style="margin-top:8px;display:flex;gap:12px;align-items:center;justify-content:space-between">
+                <div class="qty-control">
+                  <button class="qty-decrease" data-idx="${idx}" aria-label="Giảm">−</button>
+                  <input class="qty-input" type="number" min="1" value="${Number(it.qty)||1}" data-idx="${idx}" />
+                  <button class="qty-increase" data-idx="${idx}" aria-label="Tăng">+</button>
+                </div>
+                <div style="text-align:right">
+                  <div class="price">${formatPrice(subtotal)}</div>
+                  <div><button class="outline-btn remove-item" data-idx="${idx}">Xóa</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+      html += '</div></div>';
+
+      // right (summary)
+      const total = items.reduce((s,i)=> s + (Number(i.price)||0) * (Number(i.qty)||1), 0);
+      html += `
+        <div style="width:320px">
+          <div class="summary card">
+            <div class="summary-row"><div class="muted">Tạm tính</div><div class="price">${formatPrice(total)}</div></div>
+            <div class="summary-row"><div class="muted">Phí vận chuyển</div><div class="muted">Tính khi thanh toán</div></div>
+            <hr />
+            <div class="summary-row" style="font-size:18px;font-weight:700"><div>Tổng</div><div class="price">${formatPrice(total)}</div></div>
+            <div style="margin-top:12px" class="actions">
+              <button id="checkout-paypal" class="btn">Thanh toán PayPal (Giả lập)</button>
+              <button id="checkout-cod" class="outline-btn">Thanh toán COD (Giả lập)</button>
+              <button id="clear-cart" class="outline-btn">Xóa giỏ hàng</button>
+            </div>
+            <div id="checkout-result" style="margin-top:8px;color:var(--muted);font-size:13px"></div>
+          </div>
+        </div>
+      `;
+      html += '</div>';
+      root.innerHTML = html;
+
+      // Attach handlers
+      root.querySelectorAll('.qty-decrease').forEach(btn=>{
+        btn.addEventListener('click', e=>{
+          const idx = Number(e.currentTarget.dataset.idx);
+          changeQty(idx, -1);
+        });
+      });
+      root.querySelectorAll('.qty-increase').forEach(btn=>{
+        btn.addEventListener('click', e=>{
+          const idx = Number(e.currentTarget.dataset.idx);
+          changeQty(idx, +1);
+        });
+      });
+      root.querySelectorAll('.qty-input').forEach(input=>{
+        input.addEventListener('change', e=>{
+          const idx = Number(e.currentTarget.dataset.idx);
+          let v = Number(e.currentTarget.value) || 1;
+          if(v < 1) v = 1;
+          setQty(idx, v);
+        });
+      });
+      root.querySelectorAll('.remove-item').forEach(btn=>{
+        btn.addEventListener('click', e=>{
+          const idx = Number(e.currentTarget.dataset.idx);
+          removeItem(idx);
+        });
+      });
+
+      qs('#clear-cart').addEventListener('click', ()=>{
+        if(confirm('Xóa toàn bộ giỏ hàng?')){ saveCart({items:[]}); renderCart(); }
+      });
+
+      qs('#checkout-paypal').addEventListener('click', ()=>{
+        // Mock PayPal: show summary then "redirect" to fake PayPal page (simulate)
+        const summary = buildOrderSummary();
+        // Here you would normally call your server to create an order and get PayPal approval URL.
+        // We'll simulate with an alert then clear cart.
+        qs('#checkout-result').textContent = 'Mô phỏng chuyển sang PayPal — tạo đơn thành công. Bạn được chuyển tới trang thanh toán PayPal (giả lập).';
+        setTimeout(()=> {
+          alert('Giả lập PayPal: đã chuyển tới PayPal. Đơn hàng của bạn được tạo (giả lập).');
+          // simulate successful payment
+          saveCart({items:[]});
+          renderCart();
+        }, 700);
+      });
+
+      qs('#checkout-cod').addEventListener('click', ()=>{
+        const name = prompt('Nhập tên người nhận (dùng cho COD):');
+        if(!name){ alert('Hủy thanh toán COD'); return; }
+        const phone = prompt('Số điện thoại liên hệ:');
+        if(!phone){ alert('Hủy thanh toán COD'); return; }
+        // Create mock order object and "send" it (here we'll just show)
+        const order = {
+          id: 'ORDER-' + Date.now(),
+          name: name,
+          phone: phone,
+          items: loadCart().items,
+          total: items.reduce((s,i)=> s + (Number(i.price)||0) * (Number(i.qty)||1), 0),
+          method: 'COD'
+        };
+        // (In real app: POST order to server / send email)
+        qs('#checkout-result').textContent = 'Đơn hàng COD đã tạo (giả lập) — Mã: ' + order.id;
+        alert('Giả lập COD: đơn hàng ' + order.id + ' đã được tạo. Người bán sẽ gọi lại để xác nhận.');
+        saveCart({items:[]});
+        renderCart();
+      });
+    }
+
+    // mutate functions
+    function changeQty(idx, delta){
+      const cart = loadCart();
+      if(!cart.items[idx]) return;
+      const newQty = Math.max(1, (Number(cart.items[idx].qty)||1) + delta);
+      cart.items[idx].qty = newQty;
+      saveCart(cart);
+      renderCart();
+    }
+    function setQty(idx, v){
+      const cart = loadCart();
+      if(!cart.items[idx]) return;
+      cart.items[idx].qty = Math.max(1, Number(v)||1);
+      saveCart(cart);
+      renderCart();
+    }
+    function removeItem(idx){
+      const cart = loadCart();
+      if(!cart.items[idx]) return;
+      if(!confirm('Xóa sản phẩm này khỏi giỏ?')) return;
+      cart.items.splice(idx,1);
+      saveCart(cart);
+      renderCart();
+    }
+
+    function buildOrderSummary(){
+      const cart = loadCart();
+      const items = cart.items || [];
+      const total = items.reduce((s,i)=> s + (Number(i.price)||0) * (Number(i.qty)||1), 0);
+      return {items,total};
+    }
+
+    // Utility escape
+    function escapeHtml(str){
+      return String(str||'').replace(/[&<>"']/g, function(m){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"}[m]; });
+    }
+
+    // Update cart badge in header if present
+    function updateCartBadge(){
+      const el = document.getElementById('cart-link');
+      if(!el) return;
+      const cart = loadCart();
+      const cnt = (cart.items || []).reduce((s,i)=> s + (Number(i.qty)||0), 0);
+      el.textContent = 'Giỏ hàng (' + cnt + ')';
+    }
+
+    // initial
+    updateCartBadge();
+    renderCart();
+
+    // expose for console debugging
+    window.VTCart = { loadCart, saveCart, renderCart, updateCartBadge };
+
+  })();
+  </script>
 </body>
 </html>
