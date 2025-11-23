@@ -71,6 +71,12 @@
      .search-wrap{order:3;margin:10px 0}
      .menu{flex-wrap:wrap;gap:8px}
    }
+
+   /* enforce 4 columns grid on desktop, responsive */
+   .products-grid { display:grid; grid-template-columns: repeat(4, 1fr); gap:18px; margin-top:16px; }
+   @media (max-width:1100px){ .products-grid { grid-template-columns: repeat(3, 1fr); } }
+   @media (max-width:800px){ .products-grid { grid-template-columns: repeat(2, 1fr); } }
+   @media (max-width:480px){ .products-grid { grid-template-columns: repeat(1, 1fr); } }
   </style>
 </head>
 <body>
@@ -133,79 +139,109 @@
          <a href="network.html" style="color:var(--accent);text-decoration:none">Thiết bị mạng</a>
       </nav>
     </section>
-  </header>
-<header><div class="container nav"><div class="logo"><img src="LOGO2.png" alt="VTTECH"/></div><nav class="menu"><a href="index.html" class="meta-small">Trang chủ</a><a id="cart-link" href="cart.html" class="cart-pill">Giỏ hàng (0)</a></nav></div></header>
-<main class="container" style="padding-top:20px"><h2>Tất cả</h2><div id="grid-root" class="products-grid"></div></main>
-<footer><div class="container"><div style="display:flex;justify-content:space-between"><div style="font-weight:700">VTTECH</div><div class="meta-small">Hotline: 0938 582 169</div></div></div></footer>
-<script src="products.js"></script>
-<script>
-(function(){
-  const CAT = "Tất cả";
-  const products = Object.values(window.VT_PRODUCTS||{});
-  const root = document.getElementById('grid-root');
-  const items = (CAT==='all') ? products : products.filter(p => p.category === CAT);
-  if(!items.length){ root.innerHTML = '<div class="card"><p>Không có sản phẩm</p></div>'; return; }
 
-  function formatPrice(n){
-    n = Number(n)||0;
-    return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + '₫';
-  }
+    <!-- Products grid: render here -->
+    <section id="products" style="margin-top:18px">
+      <h3>Sản phẩm nổi bật</h3>
+      <div id="grid-root" class="products-grid" aria-live="polite"></div>
+    </section>
 
-  const html = items.map(p => {
-    return `
-      <article class="product-card" data-id="${p.id}" data-name="${p.name}" data-price="${p.price}">
-        <a href="product.html?id=${p.id}">
-          <img src="${p.image}" alt="${p.name}" loading="lazy"/>
-          <div class="product-title">${p.name}</div>
-        </a>
-        <div class="meta-small">${p.description}</div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
-          <div class="price">${'${'}formatPrice(p.price)${'}'}</div>
-          <div class="meta-small">${'${'}p.warranty${'}'}</div>
+    <section id="why" style="margin-top:24px">
+      <div class="grid">
+        <div class="card">
+          <h4>Giao hàng & Lắp đặt</h4>
+          <p class="meta-small">Dịch vụ giao & lắp đặt tại TP.HCM/ Các tỉnh lân cận. Hỗ trợ kỹ thuật onsite theo yêu cầu.</p>
         </div>
-        <div style="margin-top:8px" class="product-actions">
-          <button class="btn add-to-cart">Mua</button>
-          <a class="outline-btn" href="product.html?id=${p.id}">Chi tiết</a>
+        <div class="card">
+          <h4>Bảo hành & Hậu mãi</h4>
+          <p class="meta-small">Chúng tôi cung cấp bảo hành chính hãng và hỗ trợ đổi trả trong thời hạn quy định.</p>
         </div>
-      </article>
-    `;
-  }).join('');
-  // fix the `${'${'}...` placeholder above: replace those pseudo markers with actual JS by evaluating a second replace
-  // But simpler: perform a final replace to convert literal "${'${'}formatPrice..." pattern into "${formatPrice...}"
-  const fixed = html.replace(/\$\{'\\\$\{'\}formatPrice\(/g, '${formatPrice(').replace(/\}\{'\}\)/g, ')}');
-  // Actually the above was overcomplicated: instead produce final HTML by replacing the placeholder tokens used.
-  // Simpler approach: regenerate properly here:
-  const finalHtml = items.map(p => `
-      <article class="product-card" data-id="${p.id}" data-name="${p.name}" data-price="${p.price}">
-        <a href="product.html?id=${p.id}">
-          <img src="${p.image}" alt="${p.name}" loading="lazy"/>
-          <div class="product-title">${p.name}</div>
-        </a>
-        <div class="meta-small">${p.description}</div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
-          <div class="price">${formatPrice(p.price)}</div>
-          <div class="meta-small">${p.warranty}</div>
+        <div class="card">
+          <h4>Tư vấn chuyên sâu</h4>
+          <p class="meta-small">Tư vấn tối ưu hệ thống CCTV, mạng, và cấu hình máy tính theo nhu cầu thực tế.</p>
         </div>
-        <div style="margin-top:8px" class="product-actions">
-          <button class="btn add-to-cart">Mua</button>
-          <a class="outline-btn" href="product.html?id=${p.id}">Chi tiết</a>
-        </div>
-      </article>
-    `).join('');
+      </div>
+    </section>
 
-  root.innerHTML = finalHtml;
-})();
-</script>
+    <section id="contact" style="margin-top:28px">
+      <h4>Liên hệ đặt hàng / tư vấn</h4>
+      <div class="grid" style="margin-top:16px">
+        <div class="card">
+          <div style="font-weight:700">Thông tin công ty</div>
+          <p class="meta-small">Công ty TNHH Công nghệ Điện tử VTTECH</p>
+          <p>Điện thoại: <strong>0938 582 169</strong></p>
+          <p>Email: <strong>vttechcctv@gmail.com</strong></p>
+          <p class="meta-small">Địa chỉ: 183/7 Đường ba tháng hai, Phường Vườn Lài, Thành phố Hồ Chí Minh</p>
+        </div>
+        <div class="card" aria-labelledby="form-title">
+          <h3 id="form-title">Gửi yêu cầu</h3>
+          <form id="contact-form">
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <input id="cname" name="name" placeholder="Họ tên" required style="padding:10px;border-radius:8px;border:1px solid #e6edf3" />
+              <input id="cphone" name="phone" placeholder="Số điện thoại" required style="padding:10px;border-radius:8px;border:1px solid #e6edf3" />
+              <textarea id="cmessage" name="message" placeholder="Nội dung yêu cầu" rows="4" style="padding:10px;border-radius:8px;border:1px solid #e6edf3"></textarea>
+              <button class="btn" type="submit">Gửi</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<script>
-(function(){
-  const CAT = "Tất cả";
-  const products = Object.values(window.VT_PRODUCTS||{});
-  const root = document.getElementById('grid-root');
-  const items = (CAT==='all')?products:products.filter(p=>p.category===CAT);
-  if(!items.length){ root.innerHTML='<div class="card"><p>Không có sản phẩm</p></div>'; return; }
-  root.innerHTML = items.map(p=>`<article class="product-card" data-id="${p.id}" data-name="${p.name}" data-price="${p.price}"><a href="product.html?id=${p.id}"><img src="${p.image}" alt="${p.name}"/><div class="product-title">${p.name}</div></a><div class="meta-small">${p.description}</div><div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px"><div class="price">${p.price}.toString().replace(/\B(?=(\d{3})+(?!\d))/g,'.') + '₫'</div><div class="meta-small">${p.warranty}</div></div><div style="margin-top:8px" class="product-actions"><button class="btn add-to-cart">Mua</button><a class="outline-btn" href="product.html?id=${p.id}">Chi tiết</a></div></article>`).join('');
-})();
-</script>
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div style="font-weight:700">VTTECH</div>
+        <div class="meta-small">Hotline: 0938 582 169 · 0907 443 176 — Email: vttechcctv@gmail.com</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- load product data then render grid once -->
+  <script src="products.js"></script>
+
+  <script>
+  (function(){
+    // Render products into #grid-root
+    const CAT = "Tất cả"; // or set from page (cctv, drill, pc, etc.)
+    const products = Object.values(window.VT_PRODUCTS || {});
+    const root = document.getElementById('grid-root');
+    const items = (CAT === 'all' || CAT === 'Tất cả') ? products : products.filter(p => p.category === CAT);
+    if(!root) return;
+    if(!items || items.length === 0){
+      root.innerHTML = '<div class="card"><p>Không có sản phẩm</p></div>';
+      return;
+    }
+
+    function formatPrice(n){
+      n = Number(n)||0;
+      return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + '₫';
+    }
+
+    const html = items.map(p => {
+      return `
+        <article class="product-card" data-id="${p.id}" data-name="${p.name}" data-price="${p.price}">
+          <a href="product.html?id=${p.id}">
+            <img src="${p.image}" alt="${p.name}" loading="lazy"/>
+            <div class="product-title">${p.name}</div>
+          </a>
+          <div class="meta-small">${p.description}</div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+            <div class="price">${formatPrice(p.price)}</div>
+            <div class="meta-small">${p.warranty || ''}</div>
+          </div>
+          <div style="margin-top:8px" class="product-actions">
+            <button class="btn add-to-cart">Mua</button>
+            <a class="outline-btn" href="product.html?id=${p.id}">Chi tiết</a>
+          </div>
+        </article>
+      `;
+    }).join('');
+    root.innerHTML = html;
+  })();
+  </script>
+
+  <script src="app.js"></script>
   <script src="assets/cart-badge.js"></script>
-</body></html>
+</body>
+</html>
