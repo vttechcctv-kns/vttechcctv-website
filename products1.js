@@ -4,7 +4,7 @@ window.VT_PRODUCTS = {
   "p1": {
     "id": "p1",
     "name": "Camera IP 2Mp DS-2CD1T27GO-LUF",
-    "price": 2190000,
+    "price": 1190000,
     "description": "Camera IP 2Mp DS-2CD1T27GO-LUF — độ phân giải 2MP, hỗ trợ PoE, phù hợp giám sát gia đình và văn phòng.",
     "image": "Camera/DS-2CD1T27GO-LUF.png",
     "sku": "DS-2CD1T27GO-LUF",
@@ -14,7 +14,7 @@ window.VT_PRODUCTS = {
   "p2": {
     "id": "p2",
     "name": "Máy khoan pin 18V — ID1610BL",
-    "price": 1490000,
+    "price": 840000,
     "description": "Máy khoan pin 18V ID1610BL — kèm 2 pin, mô-men xoắn cao, điều tốc biến thiên.",
     "image": "Khoan Pin/WF-IW470N-1.png",
     "sku": "ID1610BL",
