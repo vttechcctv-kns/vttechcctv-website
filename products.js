@@ -364,7 +364,7 @@ window.VT_PRODUCTS = {
     "name": "SSD 1TB",
     "price": 1370000,
     "description": "SSD 1TB — mô tả ngắn cho sản phẩm SSD 1TB.",
-    "image": "linh kiện/ssd-1tb.png",
+    "image": "linh kiện/SSD-1TB.png",
     "sku": "SKU-P37",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -374,7 +374,7 @@ window.VT_PRODUCTS = {
     "name": "HDD 2TB",
     "price": 1380000,
     "description": "HDD 2TB — mô tả ngắn cho sản phẩm HDD 2TB.",
-    "image": "linh kiện/hdd-2tb.png",
+    "image": "linh kiện/Ổ cứng WD Purple 2TB WD22PURZ.png",
     "sku": "SKU-P38",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -394,7 +394,7 @@ window.VT_PRODUCTS = {
     "name": "Nguồn 500W",
     "price": 1400000,
     "description": "Nguồn 500W — mô tả ngắn cho sản phẩm Nguồn 500W.",
-    "image": "linh kiện/psu-500w.png",
+    "image": "linh kiện/DDR4 LAPTOP 4G2666 KINGMAX New Chính hãng .png",
     "sku": "SKU-P40",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -404,7 +404,7 @@ window.VT_PRODUCTS = {
     "name": "Mainboard Intel",
     "price": 1410000,
     "description": "Mainboard Intel — mô tả ngắn cho sản phẩm Mainboard Intel.",
-    "image": "linh kiện/main-intel.png",
+    "image": "linh kiện/Gigabit Multi-mode Media Converter TP-LINK MC200CM.png",
     "sku": "SKU-P41",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -414,7 +414,7 @@ window.VT_PRODUCTS = {
     "name": "VGA 8GB",
     "price": 1420000,
     "description": "VGA 8GB — mô tả ngắn cho sản phẩm VGA 8GB.",
-    "image": "linh kiện/vga-8gb.png",
+    "image": "linh kiện/Thẻ nhớ Imou 64GB.png",
     "sku": "SKU-P42",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -424,7 +424,7 @@ window.VT_PRODUCTS = {
     "name": "Adapter 19V",
     "price": 1430000,
     "description": "Adapter 19V — mô tả ngắn cho sản phẩm Adapter 19V.",
-    "image": "linh kiện/adapter-19v.png",
+    "image": "linh kiện/Switch poe 16 cổng hikvision DS-3E1518P-EI.png",
     "sku": "SKU-P43",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -434,7 +434,7 @@ window.VT_PRODUCTS = {
     "name": "Case ATX",
     "price": 1440000,
     "description": "Case ATX — mô tả ngắn cho sản phẩm Case ATX.",
-    "image": "linh kiện/case-atx.png",
+    "image": "linh kiện/Switch poe 8 cổng hikvision DS-3E1510P-EI.png",
     "sku": "SKU-P44",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -444,7 +444,7 @@ window.VT_PRODUCTS = {
     "name": "Cooler CPU",
     "price": 1450000,
     "description": "Cooler CPU — mô tả ngắn cho sản phẩm Cooler CPU.",
-    "image": "linh kiện/cooler-cpu.png",
+    "image": "linh kiện/Thẻ nhớ Sandisk 256GB.png",
     "sku": "SKU-P45",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -454,7 +454,7 @@ window.VT_PRODUCTS = {
     "name": "Cable SATA",
     "price": 1460000,
     "description": "Cable SATA — mô tả ngắn cho sản phẩm Cable SATA.",
-    "image": "linh kiện/cable-sata.png",
+    "image": "linh kiện/Ổ cứng WD Purple 4TB WD42PURZ.png",
     "sku": "SKU-P46",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -464,7 +464,7 @@ window.VT_PRODUCTS = {
     "name": "M.2 Heatsink",
     "price": 1470000,
     "description": "M.2 Heatsink — mô tả ngắn cho sản phẩm M.2 Heatsink.",
-    "image": "linh kiện/m2-heatsink.png",
+    "image": "linh kiện/DDR5 LAPTOP 8G4800 HYNIX, KINGTON, SAMSUNG, MICRON.png",
     "sku": "SKU-P47",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -474,7 +474,7 @@ window.VT_PRODUCTS = {
     "name": "Fan 120mm",
     "price": 580000,
     "description": "Fan 120mm — mô tả ngắn cho sản phẩm Fan 120mm.",
-    "image": "linh kiện/fan-120mm.png",
+    "image": "linh kiện/Ổ cứng WD Purple 3TB WD30PURZ.png",
     "sku": "SKU-P48",
     "warranty": "6 tháng",
     "category": "Linh kiện"
