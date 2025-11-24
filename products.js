@@ -4,7 +4,7 @@ window.VT_PRODUCTS = {
     "name": "Camera Dome 2MP",
     "price": 1010000,
     "description": "Camera Dome 2MP — mô tả ngắn cho sản phẩm Camera Dome 2MP.",
-    "image": "Camera/Camera ip 2mp hikvision DS-2CD1T27G2-LUF.png",
+    "image": "Camera/Camera ip 2mp hikvision DS-2CD1327G2-LUF.png",
     "sku": "SKU-P1",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -14,7 +14,7 @@ window.VT_PRODUCTS = {
     "name": "Camera Bullet 4MP",
     "price": 1020000,
     "description": "Camera Bullet 4MP — mô tả ngắn cho sản phẩm Camera Bullet 4MP.",
-    "image": "Camera/Camera ip 4mp hikvision DS-2CD1047G2-LUF.png",
+    "image": "Camera/DS-2CD1T27GO-LUF.png",
     "sku": "SKU-P2",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -34,7 +34,7 @@ window.VT_PRODUCTS = {
     "name": "Camera POV PTZ 2MP",
     "price": 1040000,
     "description": "Camera POV PTZ 2MP — mô tả ngắn cho sản phẩm Camera POV PTZ 2MP.",
-    "image": "Camera/Camera wifi ngoài trời Imou IPC-B7ED-5M0TEA, 5MP.png",
+    "image": "Camera/Camera IMOU IPC-S7DP-5M0WEZ 5MP(Cruiser Z 3K).pngg",
     "sku": "SKU-P4",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -44,7 +44,7 @@ window.VT_PRODUCTS = {
     "name": "Camera Mini 2MP",
     "price": 150000,
     "description": "Camera Mini 2MP — mô tả ngắn cho sản phẩm Camera Mini 2MP.",
-    "image": "Camera/mini-2mp.png",
+    "image": "Camera/Camera IPC-S2VBP-5M0WR (Rex VT Pro 3K).png",
     "sku": "SKU-P5",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -54,7 +54,7 @@ window.VT_PRODUCTS = {
     "name": "NVR 8 kênh",
     "price": 1060000,
     "description": "NVR 8 kênh — mô tả ngắn cho sản phẩm NVR 8 kênh.",
-    "image": "Network/nvr-8ch.png",
+    "image": "Camera/Camera IPC-K2MP-3H1WE (Ranger Mini, 3MP).png",
     "sku": "SKU-P6",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -64,7 +64,7 @@ window.VT_PRODUCTS = {
     "name": "Camera Hikvision 4MP",
     "price": 1070000,
     "description": "Camera Hikvision 4MP — mô tả ngắn cho sản phẩm Camera Hikvision 4MP.",
-    "image": "Camera/hik-4mp.png",
+    "image": "Camera/Camera ip 2mp hikvision DS-2CD1327G2-LUF.png",
     "sku": "SKU-P7",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -74,7 +74,7 @@ window.VT_PRODUCTS = {
     "name": "Camera IMOU 3MP",
     "price": 1080000,
     "description": "Camera IMOU 3MP — mô tả ngắn cho sản phẩm Camera IMOU 3MP.",
-    "image": "Camera/imou-3mp.png",
+    "image": "Camera/Camera ip 2mp hikvision DS-2CD2723G2-LIZS2U.png",
     "sku": "SKU-P8",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -84,7 +84,7 @@ window.VT_PRODUCTS = {
     "name": "Camera Ngụy Trang",
     "price": 1090000,
     "description": "Camera Ngụy Trang — mô tả ngắn cho sản phẩm Camera Ngụy Trang.",
-    "image": "Camera/hidden-2mp.png",
+    "image": "Camera/Camera IPC-S2XP-10M0WED (Ranger Dual 10MP).png",
     "sku": "SKU-P9",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -94,7 +94,7 @@ window.VT_PRODUCTS = {
     "name": "Camera WiFi 2MP",
     "price": 1100000,
     "description": "Camera WiFi 2MP — mô tả ngắn cho sản phẩm Camera WiFi 2MP.",
-    "image": "Camera/wifi-2mp.png",
+    "image": "Camera/Camera IPC-A32EP (Ranger 2, 3MP).png",
     "sku": "SKU-P10",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -104,7 +104,7 @@ window.VT_PRODUCTS = {
     "name": "Camera AHD 2MP",
     "price": 1110000,
     "description": "Camera AHD 2MP — mô tả ngắn cho sản phẩm Camera AHD 2MP.",
-    "image": "Camera/ahd-2mp.png",
+    "image": "Camera/Camera IPC-C22FP-C (Versa).png",
     "sku": "SKU-P11",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -114,7 +114,7 @@ window.VT_PRODUCTS = {
     "name": "Module IR LED",
     "price": 1120000,
     "description": "Module IR LED — mô tả ngắn cho sản phẩm Module IR LED.",
-    "image": "Camera/ir-led.png",
+    "image": "CCamera/Camera IPC-S3EP-5M0WE (Bullet 3 5MP).png",
     "sku": "SKU-P12",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
