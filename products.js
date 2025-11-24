@@ -34,7 +34,7 @@ window.VT_PRODUCTS = {
     "name": "Camera POV PTZ 2MP",
     "price": 1040000,
     "description": "Camera POV PTZ 2MP — mô tả ngắn cho sản phẩm Camera POV PTZ 2MP.",
-    "image": "Camera/Camera IMOU IPC-S7DP-5M0WEZ 5MP(Cruiser Z 3K).pngg",
+    "image": "Camera/Camera IMOU IPC-S7DP-5M0WEZ 5MP(Cruiser Z 3K).png",
     "sku": "SKU-P4",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
