@@ -114,7 +114,7 @@ window.VT_PRODUCTS = {
     "name": "Module IR LED",
     "price": 1120000,
     "description": "Module IR LED — mô tả ngắn cho sản phẩm Module IR LED.",
-    "image": "CCamera/Camera IPC-S3EP-5M0WE (Bullet 3 5MP).png",
+    "image": "Camera/Camera IPC-S3EP-5M0WE (Bullet 3 5MP).png",
     "sku": "SKU-P12",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -124,7 +124,7 @@ window.VT_PRODUCTS = {
     "name": "Máy khoan pin 18V",
     "price": 1130000,
     "description": "Máy khoan pin 18V — mô tả ngắn cho sản phẩm Máy khoan pin 18V.",
-    "image": "Khoan Pin/drill-18v.png",
+    "image": "Khoan Pin/WF-ID1370BL.png",
     "sku": "SKU-P13",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -134,7 +134,7 @@ window.VT_PRODUCTS = {
     "name": "Máy khoan pin 12V",
     "price": 1140000,
     "description": "Máy khoan pin 12V — mô tả ngắn cho sản phẩm Máy khoan pin 12V.",
-    "image": "Khoan Pin/drill-12v.png",
+    "image": "Khoan Pin/WF-ID1395BL.png",
     "sku": "SKU-P14",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -144,7 +144,7 @@ window.VT_PRODUCTS = {
     "name": "Máy mài góc pin",
     "price": 1150000,
     "description": "Máy mài góc pin — mô tả ngắn cho sản phẩm Máy mài góc pin.",
-    "image": "Khoan Pin/angle-grinder.png",
+    "image": "Khoan Pin/WF-AG100B-1.png",
     "sku": "SKU-P15",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -154,7 +154,7 @@ window.VT_PRODUCTS = {
     "name": "Bộ pin 2Ah",
     "price": 1160000,
     "description": "Bộ pin 2Ah — mô tả ngắn cho sản phẩm Bộ pin 2Ah.",
-    "image": "Khoan Pin/battery-2ah.png",
+    "image": "Khoan Pin/WF-AG100 MINI.png",
     "sku": "SKU-P16",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -164,7 +164,7 @@ window.VT_PRODUCTS = {
     "name": "Sạc nhanh 18V",
     "price": 1170000,
     "description": "Sạc nhanh 18V — mô tả ngắn cho sản phẩm Sạc nhanh 18V.",
-    "image": "Khoan Pin/charger-18v.png",
+    "image": "Khoan Pin/WF-BK2006A.png",
     "sku": "SKU-P17",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -174,7 +174,7 @@ window.VT_PRODUCTS = {
     "name": "Máy khoan động lực",
     "price": 1180000,
     "description": "Máy khoan động lực — mô tả ngắn cho sản phẩm Máy khoan động lực.",
-    "image": "Khoan Pin/hammer-drill.png",
+    "image": "Khoan Pin/WF-ID13100AK (2).png",
     "sku": "SKU-P18",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -184,7 +184,7 @@ window.VT_PRODUCTS = {
     "name": "Bộ mũi khoan 50pcs",
     "price": 1190000,
     "description": "Bộ mũi khoan 50pcs — mô tả ngắn cho sản phẩm Bộ mũi khoan 50pcs.",
-    "image": "Khoan Pin/drill-bits.png",
+    "image": "Khoan Pin/WF-SDB10.png",
     "sku": "SKU-P19",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -204,7 +204,7 @@ window.VT_PRODUCTS = {
     "name": "Máy khoan mini cầm tay",
     "price": 310000,
     "description": "Máy khoan mini cầm tay — mô tả ngắn cho sản phẩm Máy khoan mini cầm tay.",
-    "image": "Khoan Pin/mini-drill.png",
+    "image": "Khoan Pin/WF-RH3003PRO-1.png",
     "sku": "SKU-P21",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -214,7 +214,7 @@ window.VT_PRODUCTS = {
     "name": "Vít điện 12V",
     "price": 1220000,
     "description": "Vít điện 12V — mô tả ngắn cho sản phẩm Vít điện 12V.",
-    "image": "Khoan Pin/screwdriver-12v.png",
+    "image": "Khoan Pin/WF-SD150N.png",
     "sku": "SKU-P22",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -224,7 +224,7 @@ window.VT_PRODUCTS = {
     "name": "Kềm đa năng",
     "price": 1230000,
     "description": "Kềm đa năng — mô tả ngắn cho sản phẩm Kềm đa năng.",
-    "image": "Khoan Pin/pliers.png",
+    "image": "Khoan Pin/WF-RH2203.png",
     "sku": "SKU-P23",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -234,7 +234,7 @@ window.VT_PRODUCTS = {
     "name": "Bàn mài",
     "price": 1240000,
     "description": "Bàn mài — mô tả ngắn cho sản phẩm Bàn mài.",
-    "image": "Khoan Pin/bench-grinder.png",
+    "image": "Khoan Pin/WF-PW3825BL.png",
     "sku": "SKU-P24",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
