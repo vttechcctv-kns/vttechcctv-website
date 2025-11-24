@@ -244,7 +244,7 @@ window.VT_PRODUCTS = {
     "name": "Laptop Workstation 15\"",
     "price": 1250000,
     "description": "Laptop Workstation 15\" — mô tả ngắn cho sản phẩm Laptop Workstation 15\".",
-    "image": "PC/laptop-work-15.png",
+    "image": "PC/Dell Insprio 15 inh.png",
     "sku": "SKU-P25",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -254,7 +254,7 @@ window.VT_PRODUCTS = {
     "name": "Laptop văn phòng 14\"",
     "price": 1260000,
     "description": "Laptop văn phòng 14\" — mô tả ngắn cho sản phẩm Laptop văn phòng 14\".",
-    "image": "PC/laptop-14.png",
+    "image": "PC/Dell Vostro 3530 - i3-1305U 16GB  512GB SSD15.6 .png",
     "sku": "SKU-P26",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -264,7 +264,7 @@ window.VT_PRODUCTS = {
     "name": "Mini PC i5",
     "price": 370000,
     "description": "Mini PC i5 — mô tả ngắn cho sản phẩm Mini PC i5.",
-    "image": "PC/mini-pc-i5.png",
+    "image": "PC/Dell Vostro 3530 i5-1334U16GB512GB SSD15.6 .png",
     "sku": "SKU-P27",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -274,7 +274,7 @@ window.VT_PRODUCTS = {
     "name": "PC Gaming RTX 3060",
     "price": 1280000,
     "description": "PC Gaming RTX 3060 — mô tả ngắn cho sản phẩm PC Gaming RTX 3060.",
-    "image": "PC/pc-rtx3060.png",
+    "image": "PC/Dell Vostro 3530 i5-1334U8GB512GB SSD15.6 .png",
     "sku": "SKU-P28",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -284,7 +284,7 @@ window.VT_PRODUCTS = {
     "name": "Laptop mỏng nhẹ",
     "price": 1290000,
     "description": "Laptop mỏng nhẹ — mô tả ngắn cho sản phẩm Laptop mỏng nhẹ.",
-    "image": "PC/laptop-ultrabook.png",
+    "image": "PC/MTXT ASUS EXPERTBOOK B1402CVA-NK0062W i5-1335U8GB512G SSDFPWin11Xanh Đen14.0 FV.png",
     "sku": "SKU-P29",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -294,7 +294,7 @@ window.VT_PRODUCTS = {
     "name": "All-in-one 24\"",
     "price": 1300000,
     "description": "All-in-one 24\" — mô tả ngắn cho sản phẩm All-in-one 24\".",
-    "image": "PC/ai24.png",
+    "image": "PC/MTXT DELL INS 3520 i5-1235U8GB512GB SSD15.6FHDWIN11+OFFICE BẠC N3520-i5U085W11SLU FV.png",
     "sku": "SKU-P30",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -304,7 +304,7 @@ window.VT_PRODUCTS = {
     "name": "Laptop đồ họa 16\"",
     "price": 1310000,
     "description": "Laptop đồ họa 16\" — mô tả ngắn cho sản phẩm Laptop đồ họa 16\".",
-    "image": "PC/laptop-16.png",
+    "image": "PC/MTXT HP 15-fd0237TU Core i5-1334U,8GB RAM,512GB SSD,Intel Graphics,15.6.png",
     "sku": "SKU-P31",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -314,7 +314,7 @@ window.VT_PRODUCTS = {
     "name": "Laptop ASUS Vivobook",
     "price": 1320000,
     "description": "Laptop ASUS Vivobook — mô tả ngắn cho sản phẩm Laptop ASUS Vivobook.",
-    "image": "PC/asus-vivobook.png",
+    "image": "PPC/MTXT LENOVO V15 G4 IRU i5-13420H8GD4512GSSD15.6FHDWLBT2CNoOS2Y_83A100F3VN.png",
     "sku": "SKU-P32",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -324,7 +324,7 @@ window.VT_PRODUCTS = {
     "name": "Laptop Dell Inspiron",
     "price": 1330000,
     "description": "Laptop Dell Inspiron — mô tả ngắn cho sản phẩm Laptop Dell Inspiron.",
-    "image": "PC/dell-inspiron.png",
+    "image": "PC/Dell Vostro 3530 i5-1334U16GB512GB SSD15.6 .png",
     "sku": "SKU-P33",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -334,7 +334,7 @@ window.VT_PRODUCTS = {
     "name": "Laptop Lenovo ThinkPad",
     "price": 1340000,
     "description": "Laptop Lenovo ThinkPad — mô tả ngắn cho sản phẩm Laptop Lenovo ThinkPad.",
-    "image": "PC/lenovo-thinkpad.png",
+    "image": "PC/Dell Insprio 15 inh.png",
     "sku": "SKU-P34",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -344,7 +344,7 @@ window.VT_PRODUCTS = {
     "name": "Bàn phím cơ",
     "price": 1350000,
     "description": "Bàn phím cơ — mô tả ngắn cho sản phẩm Bàn phím cơ.",
-    "image": "PC/mechanical-kb.png",
+    "image": "PC/MTXT DELL INS 3520 i5-1235U8GB512GB SSD15.6FHDWIN11+OFFICE BẠC N3520-i5U085W11SLU FV.png",
     "sku": "SKU-P35",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -354,7 +354,7 @@ window.VT_PRODUCTS = {
     "name": "Màn hình 24\" FullHD",
     "price": 1360000,
     "description": "Màn hình 24\" FullHD — mô tả ngắn cho sản phẩm Màn hình 24\" FullHD.",
-    "image": "PC/monitor-24.png",
+    "image": "PC/MTXT HP 15-fd0237TU Core i5-1334U,8GB RAM,512GB SSD,Intel Graphics,15.6.png",
     "sku": "SKU-P36",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
