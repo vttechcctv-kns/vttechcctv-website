@@ -127,7 +127,7 @@ window.VT_PRODUCTS = {
     "sku": "ARCHER-C6-V2",
     "warranty": "24 tháng",
     "category": "Thiết bị mạng"
-  }
+  },
    "p13": {
     "id": "p13",
     "name": "Camera IP 2Mp DS-2CD1T27GO-LUF",
