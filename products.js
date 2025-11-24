@@ -4,7 +4,7 @@ window.VT_PRODUCTS = {
     "name": "Camera Dome 2MP",
     "price": 1010000,
     "description": "Camera Dome 2MP — mô tả ngắn cho sản phẩm Camera Dome 2MP.",
-    "image": "Camera/dome-2mp.png",
+    "image": "Camera/Camera ip 2mp hikvision DS-2CD1T27G2-LUF.png",
     "sku": "SKU-P1",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -14,7 +14,7 @@ window.VT_PRODUCTS = {
     "name": "Camera Bullet 4MP",
     "price": 1020000,
     "description": "Camera Bullet 4MP — mô tả ngắn cho sản phẩm Camera Bullet 4MP.",
-    "image": "Camera/bullet-4mp.png",
+    "image": "Camera/Camera ip 4mp hikvision DS-2CD1047G2-LUF.png",
     "sku": "SKU-P2",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -24,7 +24,7 @@ window.VT_PRODUCTS = {
     "name": "Camera 4G ngoài trời 3MP",
     "price": 1030000,
     "description": "Camera 4G ngoài trời 3MP — mô tả ngắn cho sản phẩm Camera 4G ngoài trời 3MP.",
-    "image": "Camera/4g-outdoor-3mp.png",
+    "image": "Camera/DS-2CCD1T.png",
     "sku": "SKU-P3",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -34,7 +34,7 @@ window.VT_PRODUCTS = {
     "name": "Camera POV PTZ 2MP",
     "price": 1040000,
     "description": "Camera POV PTZ 2MP — mô tả ngắn cho sản phẩm Camera POV PTZ 2MP.",
-    "image": "Camera/ptz-2mp.png",
+    "image": "Camera/Camera wifi ngoài trời Imou IPC-B7ED-5M0TEA, 5MP.png",
     "sku": "SKU-P4",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
