@@ -5,7 +5,14 @@ window.VT_PRODUCTS = {
     "id": "p1",
     "name": "Camera IP 2Mp DS-2CD1T27GO-LUF",
     "price": 1190000,
-    "description": "Camera IP 2Mp DS-2CD1T27GO-LUF — độ phân giải 2MP, hỗ trợ PoE, phù hợp giám sát gia đình và văn phòng.",
+    "description": "– Cảm biến ảnh: 1/2.8″ CMOS 2.0 megapixel.
+– Độ nhạy sáng 0.001 Lux, H.265+
+– Độ phân giải 1920 x 1080/ 25fps
+– Ống kính 4/6mm @F1.0
+– Hỗ trợ đèn sáng trắng, tối đa 50m
+– 3D DNR, DWDR, BLC, HLC
+– Hỗ trợ thẻ nhớ 256GB; Tích hợp Mic
+– Tiêu chuẩn IP67",
     "image": "Camera/DS-2CD1T27GO-LUF.png",
     "sku": "DS-2CD1T27GO-LUF",
     "warranty": "12 tháng",
