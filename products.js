@@ -554,7 +554,7 @@ window.VT_PRODUCTS = {
     "name": "AX5400 Ceiling Mount WiFi 6 Access Point TP-LINK EAP670.",
     "price": 1560000,
     "description": "AX5400 Ceiling Mount WiFi 6 Access Point TP-LINK EAP670.",
-    "image": "Network/AX5400 Ceiling Mount WiFi 6 Access Point TP-LINK EAP670.pngg",
+    "image": "Network/AX5400 Ceiling Mount WiFi 6 Access Point TP-LINK EAP670.png",
     "sku": "SKU-P56",
     "warranty": "12 tháng",
     "category": "Thiết bị mạng"
