@@ -203,7 +203,7 @@
   <script>
   (function(){
     // Render products into #grid-root
-    const CAT = "May Khoan Pin"; // or set from page (cctv, drill, pc, etc.)
+    const CAT = "Máy khoan Pin"; // or set from page (cctv, drill, pc, etc.)
     const products = Object.values(window.VT_PRODUCTS || {});
     const root = document.getElementById('grid-root');
     const items = (CAT === 'all' || CAT === 'Tất cả') ? products : products.filter(p => p.category === CAT);
