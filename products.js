@@ -194,7 +194,7 @@ window.VT_PRODUCTS = {
     "name": "Máy khoan không chổi than",
     "price": 1200000,
     "description": "Máy khoan không chổi than — mô tả ngắn cho sản phẩm Máy khoan không chổi than.",
-    "image": "Khoan Pin/brushless-drill.png",
+    "image": "Khoan Pin/WF-AG9000 PRO-1.png",
     "sku": "SKU-P20",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
