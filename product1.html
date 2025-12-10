@@ -231,25 +231,34 @@
     }
     const root = document.getElementById('product-root');
     root.innerHTML = `
-      <nav style="margin-bottom:12px" class="meta-small"><a href="all.html">Tất cả sản phẩm</a> › ${esc(p.name)}</nav>
-      <div class="product-hero card" style="display:flex;gap:20px;flex-wrap:wrap">
-        <div style="flex:0 0 420px"><img src="${encodeURI(p.image)}" alt="${esc(p.name)}" style="width:100%;object-fit:contain;border-radius:8px" /></div>
-        <div style="flex:1">
-          <h1 style="margin:0 0 8px">${esc(p.name)}</h1>
-          <div style="font-size:20px;color:#0b5edf;font-weight:700">${formatPrice(p.price)}</div>
-          <p class="meta-small">${esc(p.description)}</p>
-          <dl class="specs" style="margin-top:12px">
-            <dt>SKU</dt><dd>${esc(p.sku)}</dd>
-            <dt>Bảo hành</dt><dd>${esc(p.warranty||'')}</dd>
-            <dt>Danh mục</dt><dd>${esc(p.category||'')}</dd>
-          </dl>
-          <div style="margin-top:12px;display:flex;gap:10px">
-            <button id="add-cart-btn" class="btn">Thêm vào giỏ</button>
-            <button id="buy-now-btn" class="outline-btn">Mua ngay</button>
-          </div>
-        </div>
+    // thay thế phần root.innerHTML hiện tại bằng đoạn này
+root.innerHTML = `
+  <nav style="margin-bottom:12px" class="meta-small"><a href="all.html">Tất cả sản phẩm</a> › ${esc(p.name)}</nav>
+  <div class="product-hero card" style="display:flex;gap:20px;flex-wrap:wrap;padding:16px">
+    <div style="flex:0 0 420px">
+      <img src="${encodeURI(p.image||'')}" alt="${esc(p.name)}" style="width:100%;object-fit:contain;border-radius:8px" />
+    </div>
+    <div style="flex:1">
+      <h1 style="margin:0 0 8px">${esc(p.name)}</h1>
+      <div style="font-size:20px;color:#0b5edf;font-weight:700">${formatPrice(p.price)}</div>
+      <p class="meta-small" style="margin-top:8px">${esc(p.description||'')}</p>
+
+      ${ p.detail ? ('<h3 style="margin-top:14px">Chi tiết sản phẩm</h3><div class="product-detail" style="color:var(--muted);line-height:1.6">' + esc(p.detail).replace(/\\n/g,'<br>') + '</div>') : '' }
+
+      <dl class="specs" style="margin-top:12px">
+        <dt>SKU</dt><dd>${esc(p.sku)}</dd>
+        <dt>Bảo hành</dt><dd>${esc(p.warranty||'')}</dd>
+        <dt>Danh mục</dt><dd>${esc(p.category||'')}</dd>
+      </dl>
+
+      <div style="margin-top:12px;display:flex;gap:10px">
+        <button id="add-cart-btn" class="btn">Thêm vào giỏ</button>
+        <button id="buy-now-btn" class="outline-btn">Mua ngay</button>
       </div>
-    `;
+    </div>
+  </div>
+`;
+
     // handlers (reuse localStorage cart format)
     document.getElementById('add-cart-btn').addEventListener('click', function(){
       const KEY='vttech_cart_v1'; const cart=JSON.parse(localStorage.getItem(KEY)||'{"items":[]}');
