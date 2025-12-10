@@ -6,8 +6,9 @@ window.VT_PRODUCTS = {
     "name": "Camera IP 2Mp DS-2CD1T27GO-LUF",
     "price": 1190000,
     "description": "– Cảm biến ảnh: 1/2.8″ CMOS 2.0 megapixel.",
-     "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
+    
     "image": "Camera/DS-2CD1T27GO-LUF.png",
+     "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "DS-2CD1T27GO-LUF",
     "warranty": "12 tháng",
     "category": "CCTV"
