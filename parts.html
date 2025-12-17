@@ -221,7 +221,7 @@
     const html = items.map(p => {
       return `
         <article class="product-card" data-id="${p.id}" data-name="${p.name}" data-price="${p.price}">
-          <a href="product.html?id=${p.id}">
+          <a href="product.html?id=${p.id}" style="text-decoration:none;color:inherit">
             <img src="${p.image}" alt="${p.name}" loading="lazy"/>
             <div class="product-title">${p.name}</div>
           </a>
