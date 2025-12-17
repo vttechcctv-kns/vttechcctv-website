@@ -107,7 +107,7 @@
         const subtotal = (Number(it.price)||0) * (Number(it.qty)||1);
         html += `
           <div class="cart-item" data-id="${escapeHtml(it.id)}">
-            <img src="${escapeHtml(it.image || 'placeholder.png')}" alt="${escapeHtml(it.name)}" />
+            <img src="${escapeHtml(it.image || '')}" alt="${escapeHtml(it.name)}" />
             <div class="item-info">
               <div class="item-title">${escapeHtml(it.name)}</div>
               <div class="item-meta">SKU: ${escapeHtml(it.id||'')}</div>
@@ -138,8 +138,8 @@
             <hr />
             <div class="summary-row" style="font-size:18px;font-weight:700"><div>Tổng</div><div class="price">${formatPrice(total)}</div></div>
             <div style="margin-top:12px" class="actions">
-              <button id="checkout-paypal" class="btn">Thanh toán PayPal (Giả lập)</button>
-              <button id="checkout-cod" class="outline-btn">Thanh toán COD (Giả lập)</button>
+              <button id="checkout-paypal" class="btn">Thanh toán PayPal </button>
+              <button id="checkout-cod" class="outline-btn">Thanh toán COD </button>
               <button id="clear-cart" class="outline-btn">Xóa giỏ hàng</button>
             </div>
             <div id="checkout-result" style="margin-top:8px;color:var(--muted);font-size:13px"></div>
@@ -186,9 +186,9 @@
         const summary = buildOrderSummary();
         // Here you would normally call your server to create an order and get PayPal approval URL.
         // We'll simulate with an alert then clear cart.
-        qs('#checkout-result').textContent = 'Mô phỏng chuyển sang PayPal — tạo đơn thành công. Bạn được chuyển tới trang thanh toán PayPal (giả lập).';
+        qs('#checkout-result').textContent = 'Mô phỏng chuyển sang PayPal — tạo đơn thành công. Bạn được chuyển tới trang thanh toán PayPal.';
         setTimeout(()=> {
-          alert('Giả lập PayPal: đã chuyển tới PayPal. Đơn hàng của bạn được tạo (giả lập).');
+          alert('Giả lập PayPal: đã chuyển tới PayPal. Đơn hàng của bạn được tạo.');
           // simulate successful payment
           saveCart({items:[]});
           renderCart();
@@ -210,7 +210,7 @@
           method: 'COD'
         };
         // (In real app: POST order to server / send email)
-        qs('#checkout-result').textContent = 'Đơn hàng COD đã tạo (giả lập) — Mã: ' + order.id;
+        qs('#checkout-result').textContent = 'Đơn hàng COD đã tạo  — Mã: ' + order.id;
         alert('Giả lập COD: đơn hàng ' + order.id + ' đã được tạo. Người bán sẽ gọi lại để xác nhận.');
         saveCart({items:[]});
         renderCart();
