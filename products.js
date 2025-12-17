@@ -27,6 +27,7 @@ window.VT_PRODUCTS = {
     "price": 1030000,
     "description": "Camera 4G ngoài trời 3MP — mô tả ngắn cho sản phẩm Camera 4G ngoài trời 3MP.",
     "image": "Camera/DS-2CCD1T.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P3",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -37,6 +38,7 @@ window.VT_PRODUCTS = {
     "price": 1040000,
     "description": "Camera POV PTZ 2MP — mô tả ngắn cho sản phẩm Camera POV PTZ 2MP.",
     "image": "Camera/Camera IMOU IPC-S7DP-5M0WEZ 5MP(Cruiser Z 3K).png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P4",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -87,6 +89,7 @@ window.VT_PRODUCTS = {
     "price": 1090000,
     "description": "Camera Ngụy Trang — mô tả ngắn cho sản phẩm Camera Ngụy Trang.",
     "image": "Camera/Camera IPC-S2XP-10M0WED (Ranger Dual 10MP).png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P9",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -97,6 +100,7 @@ window.VT_PRODUCTS = {
     "price": 1100000,
     "description": "Camera WiFi 2MP — mô tả ngắn cho sản phẩm Camera WiFi 2MP.",
     "image": "Camera/Camera IPC-A32EP (Ranger 2, 3MP).png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P10",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -107,6 +111,7 @@ window.VT_PRODUCTS = {
     "price": 1110000,
     "description": "Camera AHD 2MP — mô tả ngắn cho sản phẩm Camera AHD 2MP.",
     "image": "Camera/Camera IPC-C22FP-C (Versa).png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P11",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -117,6 +122,7 @@ window.VT_PRODUCTS = {
     "price": 1120000,
     "description": "Module IR LED — mô tả ngắn cho sản phẩm Module IR LED.",
     "image": "Camera/Camera IPC-S3EP-5M0WE (Bullet 3 5MP).png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P12",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
@@ -127,6 +133,7 @@ window.VT_PRODUCTS = {
     "price": 1130000,
     "description": "Máy khoan pin 18V — mô tả ngắn cho sản phẩm Máy khoan pin 18V.",
     "image": "Khoan Pin/WF-ID1370BL.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P13",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -137,6 +144,7 @@ window.VT_PRODUCTS = {
     "price": 1140000,
     "description": "Máy khoan pin 12V — mô tả ngắn cho sản phẩm Máy khoan pin 12V.",
     "image": "Khoan Pin/WF-ID1395BL.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P14",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -147,6 +155,7 @@ window.VT_PRODUCTS = {
     "price": 1150000,
     "description": "Máy mài góc pin — mô tả ngắn cho sản phẩm Máy mài góc pin.",
     "image": "Khoan Pin/WF-AG100B-1.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P15",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -157,6 +166,7 @@ window.VT_PRODUCTS = {
     "price": 1160000,
     "description": "Bộ pin 2Ah — mô tả ngắn cho sản phẩm Bộ pin 2Ah.",
     "image": "Khoan Pin/WF-AG100 MINI.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P16",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -167,6 +177,7 @@ window.VT_PRODUCTS = {
     "price": 1170000,
     "description": "Sạc nhanh 18V — mô tả ngắn cho sản phẩm Sạc nhanh 18V.",
     "image": "Khoan Pin/WF-BK2006A.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P17",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -177,6 +188,7 @@ window.VT_PRODUCTS = {
     "price": 1180000,
     "description": "Máy khoan động lực — mô tả ngắn cho sản phẩm Máy khoan động lực.",
     "image": "Khoan Pin/WF-ID13100AK (2).png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P18",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -187,6 +199,7 @@ window.VT_PRODUCTS = {
     "price": 1190000,
     "description": "Bộ mũi khoan 50pcs — mô tả ngắn cho sản phẩm Bộ mũi khoan 50pcs.",
     "image": "Khoan Pin/WF-SDB10.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P19",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -197,6 +210,7 @@ window.VT_PRODUCTS = {
     "price": 1200000,
     "description": "Máy khoan không chổi than — mô tả ngắn cho sản phẩm Máy khoan không chổi than.",
     "image": "Khoan Pin/WF-AG9000 PRO-1.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P20",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -207,6 +221,7 @@ window.VT_PRODUCTS = {
     "price": 310000,
     "description": "Máy khoan mini cầm tay — mô tả ngắn cho sản phẩm Máy khoan mini cầm tay.",
     "image": "Khoan Pin/WF-RH3003PRO-1.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P21",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -217,6 +232,7 @@ window.VT_PRODUCTS = {
     "price": 1220000,
     "description": "Vít điện 12V — mô tả ngắn cho sản phẩm Vít điện 12V.",
     "image": "Khoan Pin/WF-SD150N.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P22",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -227,6 +243,7 @@ window.VT_PRODUCTS = {
     "price": 1230000,
     "description": "Kềm đa năng — mô tả ngắn cho sản phẩm Kềm đa năng.",
     "image": "Khoan Pin/WF-RH2203.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P23",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -237,6 +254,7 @@ window.VT_PRODUCTS = {
     "price": 1240000,
     "description": "Bàn mài — mô tả ngắn cho sản phẩm Bàn mài.",
     "image": "Khoan Pin/WF-PW3825BL.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P24",
     "warranty": "6 tháng",
     "category": "Máy khoan Pin"
@@ -247,6 +265,7 @@ window.VT_PRODUCTS = {
     "price": 1250000,
     "description": "Laptop Workstation 15\" — mô tả ngắn cho sản phẩm Laptop Workstation 15\".",
     "image": "PC/Dell Insprio 15 inh.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P25",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -257,6 +276,7 @@ window.VT_PRODUCTS = {
     "price": 1260000,
     "description": "Laptop văn phòng 14\" — mô tả ngắn cho sản phẩm Laptop văn phòng 14\".",
     "image": "PC/Dell Vostro 3530 - i3-1305U 16GB  512GB SSD15.6 .png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P26",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -267,6 +287,7 @@ window.VT_PRODUCTS = {
     "price": 370000,
     "description": "Mini PC i5 — mô tả ngắn cho sản phẩm Mini PC i5.",
     "image": "PC/Dell Vostro 3530 i5-1334U16GB512GB SSD15.6 .png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P27",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -277,6 +298,7 @@ window.VT_PRODUCTS = {
     "price": 1280000,
     "description": "PC Gaming RTX 3060 — mô tả ngắn cho sản phẩm PC Gaming RTX 3060.",
     "image": "PC/Dell Vostro 3530 i5-1334U8GB512GB SSD15.6 .png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P28",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -287,6 +309,7 @@ window.VT_PRODUCTS = {
     "price": 1290000,
     "description": "Laptop mỏng nhẹ — mô tả ngắn cho sản phẩm Laptop mỏng nhẹ.",
     "image": "PC/MTXT ASUS EXPERTBOOK B1402CVA-NK0062W i5-1335U8GB512G SSDFPWin11Xanh Đen14.0 FV.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P29",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -297,6 +320,7 @@ window.VT_PRODUCTS = {
     "price": 1300000,
     "description": "All-in-one 24\" — mô tả ngắn cho sản phẩm All-in-one 24\".",
     "image": "PC/MTXT DELL INS 3520 i5-1235U8GB512GB SSD15.6FHDWIN11+OFFICE BẠC N3520-i5U085W11SLU FV.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P30",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -307,6 +331,7 @@ window.VT_PRODUCTS = {
     "price": 1310000,
     "description": "Laptop đồ họa 16\" — mô tả ngắn cho sản phẩm Laptop đồ họa 16\".",
     "image": "PC/MTXT HP 15-fd0237TU Core i5-1334U,8GB RAM,512GB SSD,Intel Graphics,15.6.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P31",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -317,6 +342,7 @@ window.VT_PRODUCTS = {
     "price": 1320000,
     "description": "Laptop ASUS Vivobook — mô tả ngắn cho sản phẩm Laptop ASUS Vivobook.",
     "image": "PPC/MTXT LENOVO V15 G4 IRU i5-13420H8GD4512GSSD15.6FHDWLBT2CNoOS2Y_83A100F3VN.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P32",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -327,6 +353,7 @@ window.VT_PRODUCTS = {
     "price": 1330000,
     "description": "Laptop Dell Inspiron — mô tả ngắn cho sản phẩm Laptop Dell Inspiron.",
     "image": "PC/Dell Vostro 3530 i5-1334U16GB512GB SSD15.6 .png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P33",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -337,6 +364,7 @@ window.VT_PRODUCTS = {
     "price": 1340000,
     "description": "Laptop Lenovo ThinkPad — mô tả ngắn cho sản phẩm Laptop Lenovo ThinkPad.",
     "image": "PC/Dell Insprio 15 inh.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P34",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -347,6 +375,7 @@ window.VT_PRODUCTS = {
     "price": 1350000,
     "description": "Bàn phím cơ — mô tả ngắn cho sản phẩm Bàn phím cơ.",
     "image": "PC/MTXT DELL INS 3520 i5-1235U8GB512GB SSD15.6FHDWIN11+OFFICE BẠC N3520-i5U085W11SLU FV.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P35",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -357,6 +386,7 @@ window.VT_PRODUCTS = {
     "price": 1360000,
     "description": "Màn hình 24\" FullHD — mô tả ngắn cho sản phẩm Màn hình 24\" FullHD.",
     "image": "PC/MTXT HP 15-fd0237TU Core i5-1334U,8GB RAM,512GB SSD,Intel Graphics,15.6.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P36",
     "warranty": "12 tháng",
     "category": "Máy tính & Laptop"
@@ -367,6 +397,7 @@ window.VT_PRODUCTS = {
     "price": 1370000,
     "description": "SSD 1TB — mô tả ngắn cho sản phẩm SSD 1TB.",
     "image": "linh kiện/SSD-1TB.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P37",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -377,6 +408,7 @@ window.VT_PRODUCTS = {
     "price": 1380000,
     "description": "HDD 2TB — mô tả ngắn cho sản phẩm HDD 2TB.",
     "image": "linh kiện/Ổ cứng WD Purple 2TB WD22PURZ.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P38",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -387,6 +419,7 @@ window.VT_PRODUCTS = {
     "price": 1390000,
     "description": "RAM 16GB DDR4 — mô tả ngắn cho sản phẩm RAM 16GB DDR4.",
     "image": "linh kiện/ram-16gb.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P39",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -397,6 +430,7 @@ window.VT_PRODUCTS = {
     "price": 1400000,
     "description": "Nguồn 500W — mô tả ngắn cho sản phẩm Nguồn 500W.",
     "image": "linh kiện/DDR4 LAPTOP 4G2666 KINGMAX New Chính hãng .png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P40",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -407,6 +441,7 @@ window.VT_PRODUCTS = {
     "price": 1410000,
     "description": "Mainboard Intel — mô tả ngắn cho sản phẩm Mainboard Intel.",
     "image": "linh kiện/Gigabit Multi-mode Media Converter TP-LINK MC200CM.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P41",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -417,6 +452,7 @@ window.VT_PRODUCTS = {
     "price": 1420000,
     "description": "VGA 8GB — mô tả ngắn cho sản phẩm VGA 8GB.",
     "image": "linh kiện/Thẻ nhớ Imou 64GB.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P42",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -427,6 +463,7 @@ window.VT_PRODUCTS = {
     "price": 1430000,
     "description": "Adapter 19V — mô tả ngắn cho sản phẩm Adapter 19V.",
     "image": "linh kiện/Switch poe 16 cổng hikvision DS-3E1518P-EI.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P43",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -437,6 +474,7 @@ window.VT_PRODUCTS = {
     "price": 1440000,
     "description": "Case ATX — mô tả ngắn cho sản phẩm Case ATX.",
     "image": "linh kiện/Switch poe 8 cổng hikvision DS-3E1510P-EI.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P44",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -447,6 +485,7 @@ window.VT_PRODUCTS = {
     "price": 1450000,
     "description": "Cooler CPU — mô tả ngắn cho sản phẩm Cooler CPU.",
     "image": "linh kiện/Thẻ nhớ Sandisk 256GB.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P45",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -457,6 +496,7 @@ window.VT_PRODUCTS = {
     "price": 1460000,
     "description": "Cable SATA — mô tả ngắn cho sản phẩm Cable SATA.",
     "image": "linh kiện/Ổ cứng WD Purple 4TB WD42PURZ.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P46",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -467,6 +507,7 @@ window.VT_PRODUCTS = {
     "price": 1470000,
     "description": "M.2 Heatsink — mô tả ngắn cho sản phẩm M.2 Heatsink.",
     "image": "linh kiện/DDR5 LAPTOP 8G4800 HYNIX, KINGTON, SAMSUNG, MICRON.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P47",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -477,6 +518,7 @@ window.VT_PRODUCTS = {
     "price": 580000,
     "description": "Fan 120mm — mô tả ngắn cho sản phẩm Fan 120mm.",
     "image": "linh kiện/Ổ cứng WD Purple 3TB WD30PURZ.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P48",
     "warranty": "6 tháng",
     "category": "Linh kiện"
@@ -487,6 +529,7 @@ window.VT_PRODUCTS = {
     "price": 1490000,
     "description": "Wifi TP-Link TL-WR845N Chính hãng (3 anten 5dBi, 300Mbps, Repeater, 4LAN).",
     "image": "Network/Wifi TP-Link TL-WR845N Chính hãng (3 anten 5dBi, 300Mbps, Repeater, 4LAN).png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P49",
     "warranty": "12 tháng",
     "category": "Thiết bị mạng"
@@ -497,6 +540,7 @@ window.VT_PRODUCTS = {
     "price": 1500000,
     "description": "Wifi TP-Link EAP245 Chính hãng.",
     "image": "Network/Wifi TP-Link EAP245 Chính hãng.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P50",
     "warranty": "12 tháng",
     "category": "Thiết bị mạng"
@@ -507,6 +551,7 @@ window.VT_PRODUCTS = {
     "price": 1510000,
     "description": "Wifi TP-Link Archer C80 Chính hãng  (4 anten, 1900Mbps, 2 băng tần, 4LAN 1Gbps).",
     "image": "Network/Wifi TP-Link Archer C80 Chính hãng  (4 anten, 1900Mbps, 2 băng tần, 4LAN 1Gbps).png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P51",
     "warranty": "12 tháng",
     "category": "Thiết bị mạng"
@@ -517,6 +562,7 @@ window.VT_PRODUCTS = {
     "price": 2520000,
     "description": "Router Wifi 4G LTE TPLink TL-MR100  (2 anten - 32 user - 2 port).",
     "image": "Network/Router Wifi 4G LTE TPLink TL-MR100  (2 anten - 32 user - 2 port).png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P52",
     "warranty": "12 tháng",
     "category": "Thiết bị mạng"
@@ -527,6 +573,7 @@ window.VT_PRODUCTS = {
     "price": 2530000,
     "description": "Router Wi-Fi 6 — AX3000.",
     "image": "Network/Router Wi-Fi 6 — AX3000.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P53",
     "warranty": "12 tháng",
     "category": "Thiết bị mạng"
@@ -537,6 +584,7 @@ window.VT_PRODUCTS = {
     "price": 5540000,
     "description": "Router Cân bằng tải Gigabit Dual-WAN DRAYTEK VIGOR 2915 Chính hãng.",
     "image": "Network/Router Cân bằng tải Gigabit Dual-WAN DRAYTEK VIGOR 2915 Chính hãng.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P54",
     "warranty": "12 tháng",
     "category": "Thiết bị mạng"
@@ -547,6 +595,7 @@ window.VT_PRODUCTS = {
     "price": 4550000,
     "description": "Thiết bị cân bằng tải DRAYTEK-2927.",
     "image": "Network/DRAYTEK-2927.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P55",
     "warranty": "12 tháng",
     "category": "Thiết bị mạng"
@@ -557,6 +606,7 @@ window.VT_PRODUCTS = {
     "price": 1560000,
     "description": "AX5400 Ceiling Mount WiFi 6 Access Point TP-LINK EAP670.",
     "image": "Network/AX5400 Ceiling Mount WiFi 6 Access Point TP-LINK EAP670.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P56",
     "warranty": "12 tháng",
     "category": "Thiết bị mạng"
@@ -567,6 +617,7 @@ window.VT_PRODUCTS = {
     "price": 1570000,
     "description": "AX1800 Wireless Dual Band Access Point TP-LINK EAP610.",
     "image": "Network/AX1800 Wireless Dual Band Access Point TP-LINK EAP610.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P57",
     "warranty": "12 tháng",
     "category": "Thiết bị mạng"
@@ -577,6 +628,7 @@ window.VT_PRODUCTS = {
     "price": 1580000,
     "description": "AX1500 Wi-Fi 6 Router TP-LINK Archer AX12.",
     "image": "Network/AX1500 Wi-Fi 6 Router TP-LINK Archer AX12.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P58",
     "warranty": "12 tháng",
     "category": "Thiết bị mạng"
@@ -587,6 +639,7 @@ window.VT_PRODUCTS = {
     "price": 1590000,
     "description": "AC1200 Wireless Gigabit Router TP-LINK Archer C6 V2.0.",
     "image": "Network/AC1200 Wireless Gigabit Router TP-LINK Archer C6 V2.0.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P59",
     "warranty": "12 tháng",
     "category": "Thiết bị mạng"
@@ -597,6 +650,7 @@ window.VT_PRODUCTS = {
     "price": 1600000,
     "description": "AC867 Access Point TP-LINK EAP215-Bridge KIT.",
     "image": "Network/5GHz AC867 Access Point TP-LINK EAP215-Bridge KIT.png",
+    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P60",
     "warranty": "12 tháng",
     "category": "Thiết bị mạng"
