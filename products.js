@@ -4,8 +4,9 @@ window.VT_PRODUCTS = {
     "name": "Camera Dome 2MP",
     "price": 1010000,
     "description": "Camera Dome 2MP — mô tả ngắn cho sản phẩm Camera Dome 2MP.",
-    "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
+   
     "image": "Camera/Camera ip 2mp hikvision DS-2CD1327G2-LUF.png",
+     "detail": "• 2 Ống kính 6.0MP (3MP cố định + 3MP quay quét)\n• Ống kính cố định xoay cơ 0~260°, nghiêng 0~25°, tiêu cự 3.6mm (80°)\n• Ống kính PTZ xoay 0~355° ngang, 0~90° dọc, điều khiển từ xa\n• Hồng ngoại + LED thông minh, tầm xa 30m với 4 chế độ đêm\n• Đàm thoại 2 chiều, chống ồn\n• Cảnh báo chủ động: còi 110dB + đèn chớp xanh đỏ\n• IMOU SENSE AI: phát hiện người, theo dõi chuyển động\n• Wi-Fi 6 + cổng LAN, hỗ trợ ONVIF\n• Khe thẻ nhớ Micro SD 512GB\n• Nguồn 12V1A, công suất <12W",
     "sku": "SKU-P1",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
