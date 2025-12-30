@@ -78,7 +78,7 @@ window.VT_PRODUCTS = {
     "name": "Camera IMOU 3MP",
     "price": 1080000,
     "description": "Camera IMOU 3MP — mô tả ngắn cho sản phẩm Camera IMOU 3MP.",
-    "image": "Camera/DS-2CD1323G0E-ID-1.jpgCamera/DS-2CD1323G0E-ID-1.jpg",
+    "image": "Camera/DS-2CD1323G0E-ID-1.jpg",
     "sku": "SKU-P8",
     "warranty": "12 tháng",
     "category": "Camera & CCTV"
